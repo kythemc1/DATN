@@ -1,10 +1,9 @@
 export const API_ROOT = 'http://192.168.1.18:8080/api/';
 export const TIMEOUT = 10000;
 
-export const API_KEY_CHAT_BOT =
-  '';
+// export const API_KEY_CHAT_BOT ='';
 
-export const API_KEY_YOUTUBE='AIzaSyCzfyJbE3YdUIzHB5CJQIfK003bptgFg3Y';
+export const API_KEY_YOUTUBE='';
 
 export const API = {
   API_CHAT_BOT: 'https://api.openai.com/v1/completions',

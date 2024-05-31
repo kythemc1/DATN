@@ -47,7 +47,7 @@ export default function Ask({navigation}: any) {
   );
 }
 const styles = StyleSheet.create({
-  container: {flex: 1, backgroundColor: '#f9f4f4'},
+  container: {flex: 1, },
   imgWelcome: {
     height: Dimensions.get('window').height * 0.41,
     width: Dimensions.get('window').width * 0.9,

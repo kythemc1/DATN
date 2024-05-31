@@ -10,8 +10,8 @@ export default function Grammar({navigation}: any) {
     return (
     <SafeAreaView style={styles.container}>
         <View style={{backgroundColor:'#2a4d69'}}>
-            <Text style={{fontSize :20,marginLeft: 20,color: 'white'}}>
-                Grammar
+            <Text style={{fontSize :20,marginLeft: 20,color: 'white',fontWeight:'bold',marginTop:20,textAlign:'center'}}>
+                Ngữ pháp
             </Text>
         </View>
 

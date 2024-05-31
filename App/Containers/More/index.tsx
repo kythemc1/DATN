@@ -36,7 +36,7 @@ export default function More({navigation}: any) {
   };
   return (
       <SafeAreaView style={styles.container}>
-          <Header navigation={navigation} />
+          {/*<Header navigation={navigation} />*/}
 
               <ScrollView>
                   <Text
@@ -88,7 +88,7 @@ export default function More({navigation}: any) {
 }
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: '#f9f4f4',
+        // backgroundColor: '#f9f4f4',
         flex: 1,
     },
 });

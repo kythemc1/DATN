@@ -46,7 +46,6 @@ const styles = StyleSheet.create({
     marginTop: 80
   },
   textHira: {
-    color: Colors.text,
     color: '#a4846d',
     fontSize:30,
   },

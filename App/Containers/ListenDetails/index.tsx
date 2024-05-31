@@ -15,7 +15,11 @@ import {Colors} from 'react-native-ui-lib';
 import HeaderChat from "Components/Commons/HeaderChat";
 import {useRoute} from "@react-navigation/native";
 import ListenAndRead from "Components/ListenAndRead";
-
+import MOCK_DATA from "Utils/Mock";
+interface type  {
+  name : String,
+  time : String
+}
 
 export default function ListenDetails({navigation}: any) {
   const route= useRoute();
@@ -27,7 +31,7 @@ export default function ListenDetails({navigation}: any) {
     return match && match[1] ? match[1] : '';
   }
 
-  let videoId = getYouTubeID(url);
+  // let videoId = getYouTubeID(url);
   const [playing, setPlaying] = useState(false);
   const onStateChange = useCallback((state: string) => {
     if (state === 'ended') {
@@ -42,21 +46,24 @@ export default function ListenDetails({navigation}: any) {
 
 
   const [videoTranslations, setVideoTranslations] = useState([]);
-  // useEffect(() => {
-  //   const videoId = 'deY9jHZpXqk'; // ID video YouTube
-  //   const apiKey = 'YOUR_YOUTUBE_API_KEY';
+  const [videoId, setVideoId] = useState('');
+  const [subtitles, setSubtitles] = useState([]);
+// const list = []
+//   interface type  {
+//     name : String,
+//     time : String
+//   }
+  // const fetchSubtitles = async () => {
+  //   MOCK_DATA.dataa.map((item) =>{
   //
-  //   // Gửi yêu cầu API để lấy thông tin về các bản dịch của video
-  //   axios.get(`http://video.google.com/timedtext?lang=Japanese&v=${videoId}`)
-  //       .then(response => {
-  //         // const japanese = response.data.items.find((item: { snippet: { language: string; }; }) => item.snippet.language === 'ja'); // Tìm bản dịch tiếng Nhật
-  //         // setVideoTranslations(japanese ? japanese.snippet.name : 'Japanese translation not found');
-  //         console.log(response.data);
-  //       })
-  //       .catch(error => {
-  //         console.error('Error fetching translations:', error);
-  //       });
-  // }, []);
+  //     list.push({
+  //       time: item.transcriptSegmentRenderer.startTimeText.simpleText ,
+  //       text: item.transcriptSegmentRenderer.snippet.runs[0].text
+  //     })
+  //   })
+  //
+  // setSubtitles(list)
+  // };
   const mokData = {
     VideoId: '0zTjrsIWrC4',
     Name: 'Bạn có tài mà',
@@ -157,7 +164,7 @@ export default function ListenDetails({navigation}: any) {
 
   return (
     <SafeAreaView style={styles.container}>
-      <HeaderChat navigation={navigation} screenBack={'TabNavigation'} />
+      {/*<HeaderChat navigation={navigation} screenBack={'TabNavigation'} />*/}
       <YouTubePlayer
         play={playing}
         videoId={videoId}
@@ -169,6 +176,7 @@ export default function ListenDetails({navigation}: any) {
       <TouchableOpacity style={styles.buttonPause} onPress={togglePlaying}>
         <Text style={styles.textPause}>Play / Pause</Text>
       </TouchableOpacity>
+
       <ScrollView>
         {mokData.onStart.map((items, index) => (
           <View style={styles.viewDetails} key={index}>
@@ -184,7 +192,7 @@ export default function ListenDetails({navigation}: any) {
         ))}
       </ScrollView>
       <View>
-        <Text>{videoTranslations}</Text>
+        <Text>{subtitles}</Text>
       </View>
 
     </SafeAreaView>
@@ -192,7 +200,7 @@ export default function ListenDetails({navigation}: any) {
 }
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#f9f4f4',
+    backgroundColor: 'white',
     flex: 1,
   },
   titleText: {
@@ -208,7 +216,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Poppins-Medium',
   },
   textBtn: {
-    color: Colors.text,
+    color: Colors.blue30,
     alignSelf: 'center',
     marginTop: 9,
     fontFamily: 'Poppins-Medium',
@@ -257,12 +265,12 @@ const styles = StyleSheet.create({
     marginTop: 0,
   },
   buttonUnder: {
-    height: 40,
-    width: 100,
-    backgroundColor: 'white',
-    borderRadius: 10,
-    borderColor: '#143980',
-    borderWidth: 1,
+    // height: 40,
+    // width: 100,
+    // backgroundColor: 'white',
+    // borderRadius: 10,
+    // borderColor: '#143980',
+    // borderWidth: 1,
   },
   viewDetails: {
     flexDirection: 'row',

@@ -4403,9 +4403,6479 @@ const VOCA_N3 = [
     Meaning: 'nói cách khác',
   },
 ];
+
+
+const dataa =
+    [
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "450",
+          "endMs": "9740",
+          "snippet": {
+            "runs": [
+              {
+                "text": "[音楽]"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "0:00"
+          },
+          "trackingParams": "CJ4CENP2BxgAIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "0 giây [音楽]"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.450.9740"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "10559",
+          "endMs": "12500",
+          "snippet": {
+            "runs": [
+              {
+                "text": "皆さんこんにちは"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "0:10"
+          },
+          "trackingParams": "CJ0CENP2BxgBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "10 giây 皆さんこんにちは"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.10559.12500"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "12500",
+          "endMs": "16320",
+          "snippet": {
+            "runs": [
+              {
+                "text": "やばいなポッドキャストへようこそ"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "0:12"
+          },
+          "trackingParams": "CJwCENP2BxgCIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "12 giây やばいなポッドキャストへようこそ"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.12500.16320"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "16320",
+          "endMs": "18480",
+          "snippet": {
+            "runs": [
+              {
+                "text": "この番組では"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "0:16"
+          },
+          "trackingParams": "CJsCENP2BxgDIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "16 giây この番組では"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.16320.18480"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "18480",
+          "endMs": "20520",
+          "snippet": {
+            "runs": [
+              {
+                "text": "毎週土曜日に"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "0:18"
+          },
+          "trackingParams": "CJoCENP2BxgEIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "18 giây 毎週土曜日に"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.18480.20520"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "20520",
+          "endMs": "22380",
+          "snippet": {
+            "runs": [
+              {
+                "text": "面白いテーマを"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "0:20"
+          },
+          "trackingParams": "CJkCENP2BxgFIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "20 giây 面白いテーマを"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.20520.22380"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "22380",
+          "endMs": "23760",
+          "snippet": {
+            "runs": [
+              {
+                "text": "少しだけ"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "0:22"
+          },
+          "trackingParams": "CJgCENP2BxgGIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "22 giây 少しだけ"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.22380.23760"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "23760",
+          "endMs": "24840",
+          "snippet": {
+            "runs": [
+              {
+                "text": "ゆっくり"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "0:23"
+          },
+          "trackingParams": "CJcCENP2BxgHIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "23 giây ゆっくり"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.23760.24840"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "24840",
+          "endMs": "29039",
+          "snippet": {
+            "runs": [
+              {
+                "text": "簡単な日本語でお送りします"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "0:24"
+          },
+          "trackingParams": "CJYCENP2BxgIIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "24 giây 簡単な日本語でお送りします"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.24840.29039"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "29039",
+          "endMs": "31980",
+          "snippet": {
+            "runs": [
+              {
+                "text": "やばいなポッドキャストは"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "0:29"
+          },
+          "trackingParams": "CJUCENP2BxgJIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "29 giây やばいなポッドキャストは"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.29039.31980"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "31980",
+          "endMs": "33960",
+          "snippet": {
+            "runs": [
+              {
+                "text": "稲妻フェイスブックと"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "0:31"
+          },
+          "trackingParams": "CJQCENP2BxgKIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "31 giây 稲妻フェイスブックと"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.31980.33960"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "33960",
+          "endMs": "34620",
+          "snippet": {
+            "runs": [
+              {
+                "text": "YouTube"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "0:33"
+          },
+          "trackingParams": "CJMCENP2BxgLIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "33 giây YouTube"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.33960.34620"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "34620",
+          "endMs": "37440",
+          "snippet": {
+            "runs": [
+              {
+                "text": "チャンネルがありますので"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "0:34"
+          },
+          "trackingParams": "CJICENP2BxgMIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "34 giây チャンネルがありますので"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.34620.37440"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "37440",
+          "endMs": "41940",
+          "snippet": {
+            "runs": [
+              {
+                "text": "ぜひお好きな方でお楽しみください"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "0:37"
+          },
+          "trackingParams": "CJECENP2BxgNIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "37 giây ぜひお好きな方でお楽しみください"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.37440.41940"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "41940",
+          "endMs": "46980",
+          "snippet": {
+            "runs": [
+              {
+                "text": "今日はやばいなポッドキャストの"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "0:41"
+          },
+          "trackingParams": "CJACENP2BxgOIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "41 giây 今日はやばいなポッドキャストの"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.41940.46980"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "46980",
+          "endMs": "48300",
+          "snippet": {
+            "runs": [
+              {
+                "text": "ご注文は"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "0:46"
+          },
+          "trackingParams": "CI8CENP2BxgPIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "46 giây ご注文は"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.46980.48300"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "48300",
+          "endMs": "52020",
+          "snippet": {
+            "runs": [
+              {
+                "text": "Podcastですかのお時間です"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "0:48"
+          },
+          "trackingParams": "CI4CENP2BxgQIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "48 giây Podcastですかのお時間です"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.48300.52020"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "52020",
+          "endMs": "56640",
+          "snippet": {
+            "runs": [
+              {
+                "text": "では今日もよろしくお願いします"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "0:52"
+          },
+          "trackingParams": "CI0CENP2BxgRIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "52 giây では今日もよろしくお願いします"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.52020.56640"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "56640",
+          "endMs": "58620",
+          "snippet": {
+            "runs": [
+              {
+                "text": "ということで"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "0:56"
+          },
+          "trackingParams": "CIwCENP2BxgSIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "56 giây ということで"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.56640.58620"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "58620",
+          "endMs": "59399",
+          "snippet": {
+            "runs": [
+              {
+                "text": "早速"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "0:58"
+          },
+          "trackingParams": "CIsCENP2BxgTIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "58 giây 早速"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.58620.59399"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "59399",
+          "endMs": "61760",
+          "snippet": {
+            "runs": [
+              {
+                "text": "始めましょう"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "0:59"
+          },
+          "trackingParams": "CIoCENP2BxgUIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "59 giây 始めましょう"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.59399.61760"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "61800",
+          "endMs": "65158",
+          "snippet": {
+            "runs": [
+              {
+                "text": "さて今日は1本目の"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "1:01"
+          },
+          "trackingParams": "CIkCENP2BxgVIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "1 phút, 1 giây さて今日は1本目の"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.61800.65158"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "65158",
+          "endMs": "66740",
+          "snippet": {
+            "runs": [
+              {
+                "text": "テーマですね"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "1:05"
+          },
+          "trackingParams": "CIgCENP2BxgWIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "1 phút, 5 giây テーマですね"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.65158.66740"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "66740",
+          "endMs": "71420",
+          "snippet": {
+            "runs": [
+              {
+                "text": "なんで日本語を勉強したの"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "1:06"
+          },
+          "trackingParams": "CIcCENP2BxgXIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "1 phút, 6 giây なんで日本語を勉強したの"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.66740.71420"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "71939",
+          "endMs": "77540",
+          "snippet": {
+            "runs": [
+              {
+                "text": "外国人の皆さんはよく聞かれますよね"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "1:11"
+          },
+          "trackingParams": "CIYCENP2BxgYIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "1 phút, 11 giây 外国人の皆さんはよく聞かれますよね"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.71939.77540"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "77640",
+          "endMs": "79080",
+          "snippet": {
+            "runs": [
+              {
+                "text": "来日している"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "1:17"
+          },
+          "trackingParams": "CIUCENP2BxgZIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "1 phút, 17 giây 来日している"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.77640.79080"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "79080",
+          "endMs": "83580",
+          "snippet": {
+            "runs": [
+              {
+                "text": "外国人の皆さんどうですか"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "1:19"
+          },
+          "trackingParams": "CIQCENP2BxgaIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "1 phút, 19 giây 外国人の皆さんどうですか"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.79080.83580"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "83580",
+          "endMs": "85020",
+          "snippet": {
+            "runs": [
+              {
+                "text": "今回の"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "1:23"
+          },
+          "trackingParams": "CIMCENP2BxgbIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "1 phút, 23 giây 今回の"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.83580.85020"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "85020",
+          "endMs": "87180",
+          "snippet": {
+            "runs": [
+              {
+                "text": "Podcastでこの"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "1:25"
+          },
+          "trackingParams": "CIICENP2BxgcIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "1 phút, 25 giây Podcastでこの"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.85020.87180"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "87180",
+          "endMs": "89880",
+          "snippet": {
+            "runs": [
+              {
+                "text": "質問についてちょっと"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "1:27"
+          },
+          "trackingParams": "CIECENP2BxgdIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "1 phút, 27 giây 質問についてちょっと"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.87180.89880"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "89880",
+          "endMs": "92540",
+          "snippet": {
+            "runs": [
+              {
+                "text": "考えてみましょう"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "1:29"
+          },
+          "trackingParams": "CIACENP2BxgeIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "1 phút, 29 giây 考えてみましょう"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.89880.92540"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "92939",
+          "endMs": "95000",
+          "snippet": {
+            "runs": [
+              {
+                "text": "よくある理由は"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "1:32"
+          },
+          "trackingParams": "CP8BENP2BxgfIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "1 phút, 32 giây よくある理由は"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.92939.95000"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "95000",
+          "endMs": "98820",
+          "snippet": {
+            "runs": [
+              {
+                "text": "日本文化を知りたい日本"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "1:35"
+          },
+          "trackingParams": "CP4BENP2BxggIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "1 phút, 35 giây 日本文化を知りたい日本"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.95000.98820"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "98820",
+          "endMs": "99600",
+          "snippet": {
+            "runs": [
+              {
+                "text": "語で"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "1:38"
+          },
+          "trackingParams": "CP0BENP2BxghIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "1 phút, 38 giây 語で"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.98820.99600"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "99600",
+          "endMs": "102900",
+          "snippet": {
+            "runs": [
+              {
+                "text": "会話できるようになりたい日本"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "1:39"
+          },
+          "trackingParams": "CPwBENP2BxgiIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "1 phút, 39 giây 会話できるようになりたい日本"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.99600.102900"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "102900",
+          "endMs": "105799",
+          "snippet": {
+            "runs": [
+              {
+                "text": "語という言語に興味がある"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "1:42"
+          },
+          "trackingParams": "CPsBENP2BxgjIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "1 phút, 42 giây 語という言語に興味がある"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.102900.105799"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "105799",
+          "endMs": "111180",
+          "snippet": {
+            "runs": [
+              {
+                "text": "パートナーが日本人などでしょうか"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "1:45"
+          },
+          "trackingParams": "CPoBENP2BxgkIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "1 phút, 45 giây パートナーが日本人などでしょうか"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.105799.111180"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "111180",
+          "endMs": "116659",
+          "snippet": {
+            "runs": [
+              {
+                "text": "大学や大学院で日本語を勉強している人が"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "1:51"
+          },
+          "trackingParams": "CPkBENP2BxglIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "1 phút, 51 giây 大学や大学院で日本語を勉強している人が"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.111180.116659"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "116659",
+          "endMs": "120960",
+          "snippet": {
+            "runs": [
+              {
+                "text": "日本語を学ぶ理由に"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "1:56"
+          },
+          "trackingParams": "CPgBENP2BxgmIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "1 phút, 56 giây 日本語を学ぶ理由に"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.116659.120960"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "120960",
+          "endMs": "122040",
+          "snippet": {
+            "runs": [
+              {
+                "text": "将来の"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "2:00"
+          },
+          "trackingParams": "CPcBENP2BxgnIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "2 phút 将来の"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.120960.122040"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "122040",
+          "endMs": "123960",
+          "snippet": {
+            "runs": [
+              {
+                "text": "仕事のため"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "2:02"
+          },
+          "trackingParams": "CPYBENP2BxgoIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "2 phút, 2 giây 仕事のため"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.122040.123960"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "123960",
+          "endMs": "129319",
+          "snippet": {
+            "runs": [
+              {
+                "text": "留学のためというのもありますよね"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "2:03"
+          },
+          "trackingParams": "CPUBENP2BxgpIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "2 phút, 3 giây 留学のためというのもありますよね"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.123960.129319"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "129360",
+          "endMs": "134760",
+          "snippet": {
+            "runs": [
+              {
+                "text": "たまたま仕事で日本に来た人もいますし"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "2:09"
+          },
+          "trackingParams": "CPQBENP2BxgqIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "2 phút, 9 giây たまたま仕事で日本に来た人もいますし"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.129360.134760"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "134760",
+          "endMs": "136860",
+          "snippet": {
+            "runs": [
+              {
+                "text": "日系企業で"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "2:14"
+          },
+          "trackingParams": "CPMBENP2BxgrIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "2 phút, 14 giây 日系企業で"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.134760.136860"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "136860",
+          "endMs": "138180",
+          "snippet": {
+            "runs": [
+              {
+                "text": "働いたことが"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "2:16"
+          },
+          "trackingParams": "CPIBENP2BxgsIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "2 phút, 16 giây 働いたことが"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.136860.138180"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "138180",
+          "endMs": "140099",
+          "snippet": {
+            "runs": [
+              {
+                "text": "きっかけで日本"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "2:18"
+          },
+          "trackingParams": "CPEBENP2BxgtIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "2 phút, 18 giây きっかけで日本"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.138180.140099"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "140099",
+          "endMs": "140760",
+          "snippet": {
+            "runs": [
+              {
+                "text": "語を"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "2:20"
+          },
+          "trackingParams": "CPABENP2BxguIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "2 phút, 20 giây 語を"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.140099.140760"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "140760",
+          "endMs": "145400",
+          "snippet": {
+            "runs": [
+              {
+                "text": "勉強し始めた人もいると思います"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "2:20"
+          },
+          "trackingParams": "CO8BENP2BxgvIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "2 phút, 20 giây 勉強し始めた人もいると思います"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.140760.145400"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "145980",
+          "endMs": "147120",
+          "snippet": {
+            "runs": [
+              {
+                "text": "ベトナムで"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "2:25"
+          },
+          "trackingParams": "CO4BENP2BxgwIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "2 phút, 25 giây ベトナムで"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.145980.147120"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "147120",
+          "endMs": "148319",
+          "snippet": {
+            "runs": [
+              {
+                "text": "勉強した"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "2:27"
+          },
+          "trackingParams": "CO0BENP2BxgxIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "2 phút, 27 giây 勉強した"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.147120.148319"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "148319",
+          "endMs": "150599",
+          "snippet": {
+            "runs": [
+              {
+                "text": "子どもたちの中には"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "2:28"
+          },
+          "trackingParams": "COwBENP2BxgyIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "2 phút, 28 giây 子どもたちの中には"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.148319.150599"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "150599",
+          "endMs": "153560",
+          "snippet": {
+            "runs": [
+              {
+                "text": "小学校中学校"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "2:30"
+          },
+          "trackingParams": "COsBENP2BxgzIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "2 phút, 30 giây 小学校中学校"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.150599.153560"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "153560",
+          "endMs": "155180",
+          "snippet": {
+            "runs": [
+              {
+                "text": "高校"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "2:33"
+          },
+          "trackingParams": "COoBENP2Bxg0IhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "2 phút, 33 giây 高校"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.153560.155180"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "155180",
+          "endMs": "157500",
+          "snippet": {
+            "runs": [
+              {
+                "text": "大学で"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "2:35"
+          },
+          "trackingParams": "COkBENP2Bxg1IhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "2 phút, 35 giây 大学で"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.155180.157500"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "157500",
+          "endMs": "160620",
+          "snippet": {
+            "runs": [
+              {
+                "text": "第2外国語として日本語を"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "2:37"
+          },
+          "trackingParams": "COgBENP2Bxg2IhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "2 phút, 37 giây 第2外国語として日本語を"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.157500.160620"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "160620",
+          "endMs": "164940",
+          "snippet": {
+            "runs": [
+              {
+                "text": "勉強したという人もいますよね"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "2:40"
+          },
+          "trackingParams": "COcBENP2Bxg3IhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "2 phút, 40 giây 勉強したという人もいますよね"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.160620.164940"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "164940",
+          "endMs": "166500",
+          "snippet": {
+            "runs": [
+              {
+                "text": "つまり"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "2:44"
+          },
+          "trackingParams": "COYBENP2Bxg4IhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "2 phút, 44 giây つまり"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.164940.166500"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "166500",
+          "endMs": "170580",
+          "snippet": {
+            "runs": [
+              {
+                "text": "多くの人がいろいろな理由でいろいろな"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "2:46"
+          },
+          "trackingParams": "COUBENP2Bxg5IhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "2 phút, 46 giây 多くの人がいろいろな理由でいろいろな"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.166500.170580"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "170580",
+          "endMs": "172080",
+          "snippet": {
+            "runs": [
+              {
+                "text": "方法で"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "2:50"
+          },
+          "trackingParams": "COQBENP2Bxg6IhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "2 phút, 50 giây 方法で"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.170580.172080"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "172080",
+          "endMs": "174680",
+          "snippet": {
+            "runs": [
+              {
+                "text": "勉強しています"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "2:52"
+          },
+          "trackingParams": "COMBENP2Bxg7IhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "2 phút, 52 giây 勉強しています"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.172080.174680"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "175080",
+          "endMs": "175980",
+          "snippet": {
+            "runs": [
+              {
+                "text": "単純に"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "2:55"
+          },
+          "trackingParams": "COIBENP2Bxg8IhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "2 phút, 55 giây 単純に"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.175080.175980"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "175980",
+          "endMs": "177780",
+          "snippet": {
+            "runs": [
+              {
+                "text": "わかりやすく"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "2:55"
+          },
+          "trackingParams": "COEBENP2Bxg9IhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "2 phút, 55 giây わかりやすく"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.175980.177780"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "177780",
+          "endMs": "181019",
+          "snippet": {
+            "runs": [
+              {
+                "text": "仕事やお金を求めている"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "2:57"
+          },
+          "trackingParams": "COABENP2Bxg-IhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "2 phút, 57 giây 仕事やお金を求めている"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.177780.181019"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "181019",
+          "endMs": "186840",
+          "snippet": {
+            "runs": [
+              {
+                "text": "技能実習生以外だと私が知っている限り2"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "3:01"
+          },
+          "trackingParams": "CN8BENP2Bxg_IhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "3 phút, 1 giây 技能実習生以外だと私が知っている限り2"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.181019.186840"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "186840",
+          "endMs": "190680",
+          "snippet": {
+            "runs": [
+              {
+                "text": "種類に分かれると思います"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "3:06"
+          },
+          "trackingParams": "CN4BENP2BxhAIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "3 phút, 6 giây 種類に分かれると思います"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.186840.190680"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "190680",
+          "endMs": "193580",
+          "snippet": {
+            "runs": [
+              {
+                "text": "1つ目のタイプは"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "3:10"
+          },
+          "trackingParams": "CN0BENP2BxhBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "3 phút, 10 giây 1つ目のタイプは"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.190680.193580"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "193580",
+          "endMs": "195420",
+          "snippet": {
+            "runs": [
+              {
+                "text": "日本特有の"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "3:13"
+          },
+          "trackingParams": "CNwBENP2BxhCIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "3 phút, 13 giây 日本特有の"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.193580.195420"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "195420",
+          "endMs": "198180",
+          "snippet": {
+            "runs": [
+              {
+                "text": "文化が好きな人"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "3:15"
+          },
+          "trackingParams": "CNsBENP2BxhDIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "3 phút, 15 giây 文化が好きな人"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.195420.198180"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "198180",
+          "endMs": "200700",
+          "snippet": {
+            "runs": [
+              {
+                "text": "2つ目のタイプは"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "3:18"
+          },
+          "trackingParams": "CNoBENP2BxhEIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "3 phút, 18 giây 2つ目のタイプは"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.198180.200700"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "200700",
+          "endMs": "202019",
+          "snippet": {
+            "runs": [
+              {
+                "text": "純粋な"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "3:20"
+          },
+          "trackingParams": "CNkBENP2BxhFIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "3 phút, 20 giây 純粋な"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.200700.202019"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "202019",
+          "endMs": "204739",
+          "snippet": {
+            "runs": [
+              {
+                "text": "語学オタクです"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "3:22"
+          },
+          "trackingParams": "CNgBENP2BxhGIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "3 phút, 22 giây 語学オタクです"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.202019.204739"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "204840",
+          "endMs": "208800",
+          "snippet": {
+            "runs": [
+              {
+                "text": "一つ目についてですが日本には"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "3:24"
+          },
+          "trackingParams": "CNcBENP2BxhHIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "3 phút, 24 giây 一つ目についてですが日本には"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.204840.208800"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "208800",
+          "endMs": "210060",
+          "snippet": {
+            "runs": [
+              {
+                "text": "ベトナムや"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "3:28"
+          },
+          "trackingParams": "CNYBENP2BxhIIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "3 phút, 28 giây ベトナムや"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.208800.210060"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "210060",
+          "endMs": "212640",
+          "snippet": {
+            "runs": [
+              {
+                "text": "他の国にもない"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "3:30"
+          },
+          "trackingParams": "CNUBENP2BxhJIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "3 phút, 30 giây 他の国にもない"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.210060.212640"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "212640",
+          "endMs": "217099",
+          "snippet": {
+            "runs": [
+              {
+                "text": "固有の文化がたくさんあります"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "3:32"
+          },
+          "trackingParams": "CNQBENP2BxhKIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "3 phút, 32 giây 固有の文化がたくさんあります"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.212640.217099"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "217379",
+          "endMs": "218519",
+          "snippet": {
+            "runs": [
+              {
+                "text": "相撲や"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "3:37"
+          },
+          "trackingParams": "CNMBENP2BxhLIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "3 phút, 37 giây 相撲や"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.217379.218519"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "218519",
+          "endMs": "221580",
+          "snippet": {
+            "runs": [
+              {
+                "text": "刀などそういった"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "3:38"
+          },
+          "trackingParams": "CNIBENP2BxhMIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "3 phút, 38 giây 刀などそういった"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.218519.221580"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "221580",
+          "endMs": "225720",
+          "snippet": {
+            "runs": [
+              {
+                "text": "伝統文化だけではありません"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "3:41"
+          },
+          "trackingParams": "CNEBENP2BxhNIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "3 phút, 41 giây 伝統文化だけではありません"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.221580.225720"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "225720",
+          "endMs": "228120",
+          "snippet": {
+            "runs": [
+              {
+                "text": "カラオケボックスや"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "3:45"
+          },
+          "trackingParams": "CNABENP2BxhOIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "3 phút, 45 giây カラオケボックスや"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.225720.228120"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "228120",
+          "endMs": "229220",
+          "snippet": {
+            "runs": [
+              {
+                "text": "メイドカフェ"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "3:48"
+          },
+          "trackingParams": "CM8BENP2BxhPIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "3 phút, 48 giây メイドカフェ"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.228120.229220"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "229220",
+          "endMs": "231180",
+          "snippet": {
+            "runs": [
+              {
+                "text": "アニメや"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "3:49"
+          },
+          "trackingParams": "CM4BENP2BxhQIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "3 phút, 49 giây アニメや"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.229220.231180"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "231180",
+          "endMs": "233099",
+          "snippet": {
+            "runs": [
+              {
+                "text": "漫画"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "3:51"
+          },
+          "trackingParams": "CM0BENP2BxhRIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "3 phút, 51 giây 漫画"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.231180.233099"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "233099",
+          "endMs": "234360",
+          "snippet": {
+            "runs": [
+              {
+                "text": "満員電車の"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "3:53"
+          },
+          "trackingParams": "CMwBENP2BxhSIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "3 phút, 53 giây 満員電車の"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.233099.234360"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "234360",
+          "endMs": "234670",
+          "snippet": {
+            "runs": [
+              {
+                "text": "通勤"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "3:54"
+          },
+          "trackingParams": "CMsBENP2BxhTIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "3 phút, 54 giây 通勤"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.234360.234670"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "234670",
+          "endMs": "236159",
+          "snippet": {
+            "runs": [
+              {
+                "text": "[音楽]"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "3:54"
+          },
+          "trackingParams": "CMoBENP2BxhUIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "3 phút, 54 giây [音楽]"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.234670.236159"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "236159",
+          "endMs": "238500",
+          "snippet": {
+            "runs": [
+              {
+                "text": "美味しい食事"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "3:56"
+          },
+          "trackingParams": "CMkBENP2BxhVIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "3 phút, 56 giây 美味しい食事"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.236159.238500"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "238500",
+          "endMs": "239879",
+          "snippet": {
+            "runs": [
+              {
+                "text": "独特の"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "3:58"
+          },
+          "trackingParams": "CMgBENP2BxhWIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "3 phút, 58 giây 独特の"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.238500.239879"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "239879",
+          "endMs": "241260",
+          "snippet": {
+            "runs": [
+              {
+                "text": "ファッションと"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "3:59"
+          },
+          "trackingParams": "CMcBENP2BxhXIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "3 phút, 59 giây ファッションと"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.239879.241260"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "241260",
+          "endMs": "245959",
+          "snippet": {
+            "runs": [
+              {
+                "text": "ビジュアル系の音楽など"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "4:01"
+          },
+          "trackingParams": "CMYBENP2BxhYIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "4 phút, 1 giây ビジュアル系の音楽など"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.241260.245959"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "246060",
+          "endMs": "249599",
+          "snippet": {
+            "runs": [
+              {
+                "text": "数えきれないほど日本には"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "4:06"
+          },
+          "trackingParams": "CMUBENP2BxhZIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "4 phút, 6 giây 数えきれないほど日本には"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.246060.249599"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "249599",
+          "endMs": "252180",
+          "snippet": {
+            "runs": [
+              {
+                "text": "独特なサブカルチャーが"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "4:09"
+          },
+          "trackingParams": "CMQBENP2BxhaIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "4 phút, 9 giây 独特なサブカルチャーが"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.249599.252180"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "252180",
+          "endMs": "254900",
+          "snippet": {
+            "runs": [
+              {
+                "text": "存在しています"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "4:12"
+          },
+          "trackingParams": "CMMBENP2BxhbIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "4 phút, 12 giây 存在しています"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.252180.254900"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "255180",
+          "endMs": "259560",
+          "snippet": {
+            "runs": [
+              {
+                "text": "実は私たちを取り巻く日本の"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "4:15"
+          },
+          "trackingParams": "CMIBENP2BxhcIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "4 phút, 15 giây 実は私たちを取り巻く日本の"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.255180.259560"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "259560",
+          "endMs": "261959",
+          "snippet": {
+            "runs": [
+              {
+                "text": "ライフスタイルそれ"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "4:19"
+          },
+          "trackingParams": "CMEBENP2BxhdIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "4 phút, 19 giây ライフスタイルそれ"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.259560.261959"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "261959",
+          "endMs": "263880",
+          "snippet": {
+            "runs": [
+              {
+                "text": "自体が"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "4:21"
+          },
+          "trackingParams": "CMABENP2BxheIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "4 phút, 21 giây 自体が"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.261959.263880"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "263880",
+          "endMs": "264919",
+          "snippet": {
+            "runs": [
+              {
+                "text": "多くの"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "4:23"
+          },
+          "trackingParams": "CL8BENP2BxhfIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "4 phút, 23 giây 多くの"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.263880.264919"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "264919",
+          "endMs": "267000",
+          "snippet": {
+            "runs": [
+              {
+                "text": "日本語学習者の"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "4:24"
+          },
+          "trackingParams": "CL4BENP2BxhgIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "4 phút, 24 giây 日本語学習者の"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.264919.267000"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "267000",
+          "endMs": "270440",
+          "snippet": {
+            "runs": [
+              {
+                "text": "憧れとなっているのです"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "4:27"
+          },
+          "trackingParams": "CL0BENP2BxhhIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "4 phút, 27 giây 憧れとなっているのです"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.267000.270440"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "271020",
+          "endMs": "275759",
+          "snippet": {
+            "runs": [
+              {
+                "text": "彼らはそういったサブカルチャーの日本の"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "4:31"
+          },
+          "trackingParams": "CLwBENP2BxhiIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "4 phút, 31 giây 彼らはそういったサブカルチャーの日本の"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.271020.275759"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "275759",
+          "endMs": "277139",
+          "snippet": {
+            "runs": [
+              {
+                "text": "ライフスタイルに"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "4:35"
+          },
+          "trackingParams": "CLsBENP2BxhjIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "4 phút, 35 giây ライフスタイルに"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.275759.277139"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "277139",
+          "endMs": "279419",
+          "snippet": {
+            "runs": [
+              {
+                "text": "憧れて最終"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "4:37"
+          },
+          "trackingParams": "CLoBENP2BxhkIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "4 phút, 37 giây 憧れて最終"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.277139.279419"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "279419",
+          "endMs": "280680",
+          "snippet": {
+            "runs": [
+              {
+                "text": "的に"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "4:39"
+          },
+          "trackingParams": "CLkBENP2BxhlIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "4 phút, 39 giây 的に"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.279419.280680"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "280680",
+          "endMs": "281820",
+          "snippet": {
+            "runs": [
+              {
+                "text": "移住までも"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "4:40"
+          },
+          "trackingParams": "CLgBENP2BxhmIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "4 phút, 40 giây 移住までも"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.280680.281820"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "281820",
+          "endMs": "282900",
+          "snippet": {
+            "runs": [
+              {
+                "text": "夢見て"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "4:41"
+          },
+          "trackingParams": "CLcBENP2BxhnIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "4 phút, 41 giây 夢見て"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.281820.282900"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "282900",
+          "endMs": "285560",
+          "snippet": {
+            "runs": [
+              {
+                "text": "勉強しています"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "4:42"
+          },
+          "trackingParams": "CLYBENP2BxhoIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "4 phút, 42 giây 勉強しています"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.282900.285560"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "286020",
+          "endMs": "289500",
+          "snippet": {
+            "runs": [
+              {
+                "text": "日本に住んで日本に"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "4:46"
+          },
+          "trackingParams": "CLUBENP2BxhpIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "4 phút, 46 giây 日本に住んで日本に"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.286020.289500"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "289500",
+          "endMs": "291479",
+          "snippet": {
+            "runs": [
+              {
+                "text": "染まることができたら"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "4:49"
+          },
+          "trackingParams": "CLQBENP2BxhqIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "4 phút, 49 giây 染まることができたら"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.289500.291479"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "291479",
+          "endMs": "295220",
+          "snippet": {
+            "runs": [
+              {
+                "text": "めちゃくちゃ喜ぶタイプです"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "4:51"
+          },
+          "trackingParams": "CLMBENP2BxhrIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "4 phút, 51 giây めちゃくちゃ喜ぶタイプです"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.291479.295220"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "295680",
+          "endMs": "297840",
+          "snippet": {
+            "runs": [
+              {
+                "text": "二つ目のタイプは"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "4:55"
+          },
+          "trackingParams": "CLIBENP2BxhsIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "4 phút, 55 giây 二つ目のタイプは"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.295680.297840"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "297840",
+          "endMs": "299040",
+          "snippet": {
+            "runs": [
+              {
+                "text": "純粋な"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "4:57"
+          },
+          "trackingParams": "CLEBENP2BxhtIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "4 phút, 57 giây 純粋な"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.297840.299040"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "299040",
+          "endMs": "300780",
+          "snippet": {
+            "runs": [
+              {
+                "text": "語学オタクです"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "4:59"
+          },
+          "trackingParams": "CLABENP2BxhuIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "4 phút, 59 giây 語学オタクです"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.299040.300780"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "300780",
+          "endMs": "301919",
+          "snippet": {
+            "runs": [
+              {
+                "text": "これ"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "5:00"
+          },
+          "trackingParams": "CK8BENP2BxhvIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "5 phút これ"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.300780.301919"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "301919",
+          "endMs": "304740",
+          "snippet": {
+            "runs": [
+              {
+                "text": "結構います"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "5:01"
+          },
+          "trackingParams": "CK4BENP2BxhwIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "5 phút, 1 giây 結構います"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.301919.304740"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "304740",
+          "endMs": "307740",
+          "snippet": {
+            "runs": [
+              {
+                "text": "別に日本に来ることを"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "5:04"
+          },
+          "trackingParams": "CK0BENP2BxhxIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "5 phút, 4 giây 別に日本に来ることを"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.304740.307740"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "307740",
+          "endMs": "312000",
+          "snippet": {
+            "runs": [
+              {
+                "text": "目標としていたり日本の文化に"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "5:07"
+          },
+          "trackingParams": "CKwBENP2BxhyIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "5 phút, 7 giây 目標としていたり日本の文化に"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.307740.312000"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "312000",
+          "endMs": "315300",
+          "snippet": {
+            "runs": [
+              {
+                "text": "興味があるわけではなく"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "5:12"
+          },
+          "trackingParams": "CKsBENP2BxhzIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "5 phút, 12 giây 興味があるわけではなく"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.312000.315300"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "315300",
+          "endMs": "316440",
+          "snippet": {
+            "runs": [
+              {
+                "text": "純粋に"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "5:15"
+          },
+          "trackingParams": "CKoBENP2Bxh0IhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "5 phút, 15 giây 純粋に"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.315300.316440"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "316440",
+          "endMs": "317720",
+          "snippet": {
+            "runs": [
+              {
+                "text": "趣味として"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "5:16"
+          },
+          "trackingParams": "CKkBENP2Bxh1IhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "5 phút, 16 giây 趣味として"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.316440.317720"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "317720",
+          "endMs": "319380",
+          "snippet": {
+            "runs": [
+              {
+                "text": "エキゾチックな"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "5:17"
+          },
+          "trackingParams": "CKgBENP2Bxh2IhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "5 phút, 17 giây エキゾチックな"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.317720.319380"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "319380",
+          "endMs": "320280",
+          "snippet": {
+            "runs": [
+              {
+                "text": "語学の"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "5:19"
+          },
+          "trackingParams": "CKcBENP2Bxh3IhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "5 phút, 19 giây 語学の"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.319380.320280"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "320280",
+          "endMs": "322580",
+          "snippet": {
+            "runs": [
+              {
+                "text": "習得を楽しんでいる"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "5:20"
+          },
+          "trackingParams": "CKYBENP2Bxh4IhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "5 phút, 20 giây 習得を楽しんでいる"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.320280.322580"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "322580",
+          "endMs": "327060",
+          "snippet": {
+            "runs": [
+              {
+                "text": "もしくはエキゾチックな語学がしゃべれる"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "5:22"
+          },
+          "trackingParams": "CKUBENP2Bxh5IhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "5 phút, 22 giây もしくはエキゾチックな語学がしゃべれる"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.322580.327060"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "327060",
+          "endMs": "328979",
+          "snippet": {
+            "runs": [
+              {
+                "text": "ことに対して"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "5:27"
+          },
+          "trackingParams": "CKQBENP2Bxh6IhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "5 phút, 27 giây ことに対して"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.327060.328979"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "328979",
+          "endMs": "332160",
+          "snippet": {
+            "runs": [
+              {
+                "text": "知的差を感じる人たちです"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "5:28"
+          },
+          "trackingParams": "CKMBENP2Bxh7IhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "5 phút, 28 giây 知的差を感じる人たちです"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.328979.332160"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "332160",
+          "endMs": "333840",
+          "snippet": {
+            "runs": [
+              {
+                "text": "では"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "5:32"
+          },
+          "trackingParams": "CKIBENP2Bxh8IhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "5 phút, 32 giây では"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.332160.333840"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "333840",
+          "endMs": "335220",
+          "snippet": {
+            "runs": [
+              {
+                "text": "めっちゃ可愛い"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "5:33"
+          },
+          "trackingParams": "CKEBENP2Bxh9IhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "5 phút, 33 giây めっちゃ可愛い"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.333840.335220"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "335220",
+          "endMs": "339479",
+          "snippet": {
+            "runs": [
+              {
+                "text": "ベトナム人のリンさんになんで日本語を"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "5:35"
+          },
+          "trackingParams": "CKABENP2Bxh-IhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "5 phút, 35 giây ベトナム人のリンさんになんで日本語を"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.335220.339479"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "339479",
+          "endMs": "341639",
+          "snippet": {
+            "runs": [
+              {
+                "text": "勉強したの」の"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "5:39"
+          },
+          "trackingParams": "CJ8BENP2Bxh_IhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "5 phút, 39 giây 勉強したの」の"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.339479.341639"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "341639",
+          "endMs": "342539",
+          "snippet": {
+            "runs": [
+              {
+                "text": "答えを"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "5:41"
+          },
+          "trackingParams": "CJ4BENP2BxiAASITCJSYoa63rYYDFZRX9QUdWKIC3A==",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "5 phút, 41 giây 答えを"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.341639.342539"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "342539",
+          "endMs": "344960",
+          "snippet": {
+            "runs": [
+              {
+                "text": "聞いてみましょう"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "5:42"
+          },
+          "trackingParams": "CJ0BENP2BxiBASITCJSYoa63rYYDFZRX9QUdWKIC3A==",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "5 phút, 42 giây 聞いてみましょう"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.342539.344960"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "345720",
+          "endMs": "348720",
+          "snippet": {
+            "runs": [
+              {
+                "text": "皆さんこんばんは24"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "5:45"
+          },
+          "trackingParams": "CJwBENP2BxiCASITCJSYoa63rYYDFZRX9QUdWKIC3A==",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "5 phút, 45 giây 皆さんこんばんは24"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.345720.348720"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "348720",
+          "endMs": "349680",
+          "snippet": {
+            "runs": [
+              {
+                "text": "歳の"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "5:48"
+          },
+          "trackingParams": "CJsBENP2BxiDASITCJSYoa63rYYDFZRX9QUdWKIC3A==",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "5 phút, 48 giây 歳の"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.348720.349680"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "349680",
+          "endMs": "351900",
+          "snippet": {
+            "runs": [
+              {
+                "text": "凛と申します"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "5:49"
+          },
+          "trackingParams": "CJoBENP2BxiEASITCJSYoa63rYYDFZRX9QUdWKIC3A==",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "5 phút, 49 giây 凛と申します"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.349680.351900"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "351900",
+          "endMs": "353400",
+          "snippet": {
+            "runs": [
+              {
+                "text": "今"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "5:51"
+          },
+          "trackingParams": "CJkBENP2BxiFASITCJSYoa63rYYDFZRX9QUdWKIC3A==",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "5 phút, 51 giây 今"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.351900.353400"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "353400",
+          "endMs": "356400",
+          "snippet": {
+            "runs": [
+              {
+                "text": "愛知県に住んでいます"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "5:53"
+          },
+          "trackingParams": "CJgBENP2BxiGASITCJSYoa63rYYDFZRX9QUdWKIC3A==",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "5 phút, 53 giây 愛知県に住んでいます"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.353400.356400"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "356400",
+          "endMs": "361979",
+          "snippet": {
+            "runs": [
+              {
+                "text": "日本語を選んだ理由を一言で言うなら"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "5:56"
+          },
+          "trackingParams": "CJcBENP2BxiHASITCJSYoa63rYYDFZRX9QUdWKIC3A==",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "5 phút, 56 giây 日本語を選んだ理由を一言で言うなら"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.356400.361979"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "361979",
+          "endMs": "363660",
+          "snippet": {
+            "runs": [
+              {
+                "text": "Destiny"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "6:01"
+          },
+          "trackingParams": "CJYBENP2BxiIASITCJSYoa63rYYDFZRX9QUdWKIC3A==",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "6 phút, 1 giây Destiny"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.361979.363660"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "363660",
+          "endMs": "366840",
+          "snippet": {
+            "runs": [
+              {
+                "text": "運命だと思います"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "6:03"
+          },
+          "trackingParams": "CJUBENP2BxiJASITCJSYoa63rYYDFZRX9QUdWKIC3A==",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "6 phút, 3 giây 運命だと思います"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.363660.366840"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "366840",
+          "endMs": "368460",
+          "snippet": {
+            "runs": [
+              {
+                "text": "最初は"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "6:06"
+          },
+          "trackingParams": "CJQBENP2BxiKASITCJSYoa63rYYDFZRX9QUdWKIC3A==",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "6 phút, 6 giây 最初は"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.366840.368460"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "368460",
+          "endMs": "372780",
+          "snippet": {
+            "runs": [
+              {
+                "text": "特別な理由なんてありませんでした"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "6:08"
+          },
+          "trackingParams": "CJMBENP2BxiLASITCJSYoa63rYYDFZRX9QUdWKIC3A==",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "6 phút, 8 giây 特別な理由なんてありませんでした"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.368460.372780"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "372780",
+          "endMs": "374160",
+          "snippet": {
+            "runs": [
+              {
+                "text": "ただ"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "6:12"
+          },
+          "trackingParams": "CJIBENP2BxiMASITCJSYoa63rYYDFZRX9QUdWKIC3A==",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "6 phút, 12 giây ただ"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.372780.374160"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "374160",
+          "endMs": "375960",
+          "snippet": {
+            "runs": [
+              {
+                "text": "言語について"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "6:14"
+          },
+          "trackingParams": "CJEBENP2BxiNASITCJSYoa63rYYDFZRX9QUdWKIC3A==",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "6 phút, 14 giây 言語について"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.374160.375960"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "375960",
+          "endMs": "379638",
+          "snippet": {
+            "runs": [
+              {
+                "text": "勉強したかっただけでした"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "6:15"
+          },
+          "trackingParams": "CJABENP2BxiOASITCJSYoa63rYYDFZRX9QUdWKIC3A==",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "6 phút, 15 giây 勉強したかっただけでした"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.375960.379638"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "380039",
+          "endMs": "385080",
+          "snippet": {
+            "runs": [
+              {
+                "text": "言語の勉強はとても魅力的です"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "6:20"
+          },
+          "trackingParams": "CI8BENP2BxiPASITCJSYoa63rYYDFZRX9QUdWKIC3A==",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "6 phút, 20 giây 言語の勉強はとても魅力的です"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.380039.385080"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "385080",
+          "endMs": "387600",
+          "snippet": {
+            "runs": [
+              {
+                "text": "今までと違う"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "6:25"
+          },
+          "trackingParams": "CI4BENP2BxiQASITCJSYoa63rYYDFZRX9QUdWKIC3A==",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "6 phút, 25 giây 今までと違う"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.385080.387600"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "387600",
+          "endMs": "388380",
+          "snippet": {
+            "runs": [
+              {
+                "text": "新しい"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "6:27"
+          },
+          "trackingParams": "CI0BENP2BxiRASITCJSYoa63rYYDFZRX9QUdWKIC3A==",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "6 phút, 27 giây 新しい"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.387600.388380"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "388380",
+          "endMs": "389699",
+          "snippet": {
+            "runs": [
+              {
+                "text": "言語を"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "6:28"
+          },
+          "trackingParams": "CIwBENP2BxiSASITCJSYoa63rYYDFZRX9QUdWKIC3A==",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "6 phút, 28 giây 言語を"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.388380.389699"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "389699",
+          "endMs": "391979",
+          "snippet": {
+            "runs": [
+              {
+                "text": "習得したら"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "6:29"
+          },
+          "trackingParams": "CIsBENP2BxiTASITCJSYoa63rYYDFZRX9QUdWKIC3A==",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "6 phút, 29 giây 習得したら"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.389699.391979"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "391979",
+          "endMs": "392819",
+          "snippet": {
+            "runs": [
+              {
+                "text": "新しい"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "6:31"
+          },
+          "trackingParams": "CIoBENP2BxiUASITCJSYoa63rYYDFZRX9QUdWKIC3A==",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "6 phút, 31 giây 新しい"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.391979.392819"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "392819",
+          "endMs": "394139",
+          "snippet": {
+            "runs": [
+              {
+                "text": "考えも"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "6:32"
+          },
+          "trackingParams": "CIkBENP2BxiVASITCJSYoa63rYYDFZRX9QUdWKIC3A==",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "6 phút, 32 giây 考えも"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.392819.394139"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "394139",
+          "endMs": "397639",
+          "snippet": {
+            "runs": [
+              {
+                "text": "理解することができます"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "6:34"
+          },
+          "trackingParams": "CIgBENP2BxiWASITCJSYoa63rYYDFZRX9QUdWKIC3A==",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "6 phút, 34 giây 理解することができます"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.394139.397639"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "397860",
+          "endMs": "401280",
+          "snippet": {
+            "runs": [
+              {
+                "text": "実は高校生の時"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "6:37"
+          },
+          "trackingParams": "CIcBENP2BxiXASITCJSYoa63rYYDFZRX9QUdWKIC3A==",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "6 phút, 37 giây 実は高校生の時"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.397860.401280"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "401280",
+          "endMs": "403440",
+          "snippet": {
+            "runs": [
+              {
+                "text": "文化交流会で"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "6:41"
+          },
+          "trackingParams": "CIYBENP2BxiYASITCJSYoa63rYYDFZRX9QUdWKIC3A==",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "6 phút, 41 giây 文化交流会で"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.401280.403440"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "403440",
+          "endMs": "406440",
+          "snippet": {
+            "runs": [
+              {
+                "text": "偶然出会った日本人と"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "6:43"
+          },
+          "trackingParams": "CIUBENP2BxiZASITCJSYoa63rYYDFZRX9QUdWKIC3A==",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "6 phút, 43 giây 偶然出会った日本人と"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.403440.406440"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "406440",
+          "endMs": "409240",
+          "snippet": {
+            "runs": [
+              {
+                "text": "付き合うことになりました"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "6:46"
+          },
+          "trackingParams": "CIQBENP2BxiaASITCJSYoa63rYYDFZRX9QUdWKIC3A==",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "6 phút, 46 giây 付き合うことになりました"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.406440.409240"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "409240",
+          "endMs": "410520",
+          "snippet": {
+            "runs": [
+              {
+                "text": "[音楽]"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "6:49"
+          },
+          "trackingParams": "CIMBENP2BxibASITCJSYoa63rYYDFZRX9QUdWKIC3A==",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "6 phút, 49 giây [音楽]"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.409240.410520"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "410520",
+          "endMs": "413220",
+          "snippet": {
+            "runs": [
+              {
+                "text": "彼はハンサムで"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "6:50"
+          },
+          "trackingParams": "CIIBENP2BxicASITCJSYoa63rYYDFZRX9QUdWKIC3A==",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "6 phút, 50 giây 彼はハンサムで"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.410520.413220"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "413220",
+          "endMs": "416520",
+          "snippet": {
+            "runs": [
+              {
+                "text": "面白い日本人でした"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "6:53"
+          },
+          "trackingParams": "CIEBENP2BxidASITCJSYoa63rYYDFZRX9QUdWKIC3A==",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "6 phút, 53 giây 面白い日本人でした"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.413220.416520"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "416520",
+          "endMs": "419160",
+          "snippet": {
+            "runs": [
+              {
+                "text": "私はその時"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "6:56"
+          },
+          "trackingParams": "CIABENP2BxieASITCJSYoa63rYYDFZRX9QUdWKIC3A==",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "6 phút, 56 giây 私はその時"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.416520.419160"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "419160",
+          "endMs": "421560",
+          "snippet": {
+            "runs": [
+              {
+                "text": "少しは日本に"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "6:59"
+          },
+          "trackingParams": "CH8Q0_YHGJ8BIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "6 phút, 59 giây 少しは日本に"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.419160.421560"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "421560",
+          "endMs": "424740",
+          "snippet": {
+            "runs": [
+              {
+                "text": "関心を持っていましたが"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "7:01"
+          },
+          "trackingParams": "CH4Q0_YHGKABIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "7 phút, 1 giây 関心を持っていましたが"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.421560.424740"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "424740",
+          "endMs": "427199",
+          "snippet": {
+            "runs": [
+              {
+                "text": "でも日本語が"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "7:04"
+          },
+          "trackingParams": "CH0Q0_YHGKEBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "7 phút, 4 giây でも日本語が"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.424740.427199"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "427199",
+          "endMs": "430080",
+          "snippet": {
+            "runs": [
+              {
+                "text": "全然わかりませんでした"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "7:07"
+          },
+          "trackingParams": "CHwQ0_YHGKIBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "7 phút, 7 giây 全然わかりませんでした"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.427199.430080"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "430080",
+          "endMs": "432960",
+          "snippet": {
+            "runs": [
+              {
+                "text": "だから私たちは"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "7:10"
+          },
+          "trackingParams": "CHsQ0_YHGKMBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "7 phút, 10 giây だから私たちは"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.430080.432960"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "432960",
+          "endMs": "433800",
+          "snippet": {
+            "runs": [
+              {
+                "text": "主に"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "7:12"
+          },
+          "trackingParams": "CHoQ0_YHGKQBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "7 phút, 12 giây 主に"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.432960.433800"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "433800",
+          "endMs": "437539",
+          "snippet": {
+            "runs": [
+              {
+                "text": "英語でよく話しました"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "7:13"
+          },
+          "trackingParams": "CHkQ0_YHGKUBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "7 phút, 13 giây 英語でよく話しました"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.433800.437539"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "437759",
+          "endMs": "440539",
+          "snippet": {
+            "runs": [
+              {
+                "text": "彼が日本に戻った後も"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "7:17"
+          },
+          "trackingParams": "CHgQ0_YHGKYBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "7 phút, 17 giây 彼が日本に戻った後も"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.437759.440539"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "440539",
+          "endMs": "442560",
+          "snippet": {
+            "runs": [
+              {
+                "text": "私たちは"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "7:20"
+          },
+          "trackingParams": "CHcQ0_YHGKcBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "7 phút, 20 giây 私たちは"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.440539.442560"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "442560",
+          "endMs": "444180",
+          "snippet": {
+            "runs": [
+              {
+                "text": "Facebookで"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "7:22"
+          },
+          "trackingParams": "CHYQ0_YHGKgBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "7 phút, 22 giây Facebookで"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.442560.444180"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "444180",
+          "endMs": "447419",
+          "snippet": {
+            "runs": [
+              {
+                "text": "連絡を取り合っていました"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "7:24"
+          },
+          "trackingParams": "CHUQ0_YHGKkBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "7 phút, 24 giây 連絡を取り合っていました"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.444180.447419"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "447419",
+          "endMs": "451680",
+          "snippet": {
+            "runs": [
+              {
+                "text": "それ以来私は日本語を"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "7:27"
+          },
+          "trackingParams": "CHQQ0_YHGKoBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "7 phút, 27 giây それ以来私は日本語を"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.447419.451680"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "451680",
+          "endMs": "452759",
+          "snippet": {
+            "runs": [
+              {
+                "text": "真剣に"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "7:31"
+          },
+          "trackingParams": "CHMQ0_YHGKsBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "7 phút, 31 giây 真剣に"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.451680.452759"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "452759",
+          "endMs": "454630",
+          "snippet": {
+            "runs": [
+              {
+                "text": "勉強するようになりました"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "7:32"
+          },
+          "trackingParams": "CHIQ0_YHGKwBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "7 phút, 32 giây 勉強するようになりました"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.452759.454630"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "454630",
+          "endMs": "456240",
+          "snippet": {
+            "runs": [
+              {
+                "text": "[音楽]"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "7:34"
+          },
+          "trackingParams": "CHEQ0_YHGK0BIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "7 phút, 34 giây [音楽]"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.454630.456240"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "456240",
+          "endMs": "461699",
+          "snippet": {
+            "runs": [
+              {
+                "text": "1年ほど日本語を勉強した後で"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "7:36"
+          },
+          "trackingParams": "CHAQ0_YHGK4BIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "7 phút, 36 giây 1年ほど日本語を勉強した後で"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.456240.461699"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "461699",
+          "endMs": "466620",
+          "snippet": {
+            "runs": [
+              {
+                "text": "交換留学で日本にも行きました"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "7:41"
+          },
+          "trackingParams": "CG8Q0_YHGK8BIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "7 phút, 41 giây 交換留学で日本にも行きました"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.461699.466620"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "466620",
+          "endMs": "467940",
+          "snippet": {
+            "runs": [
+              {
+                "text": "でも"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "7:46"
+          },
+          "trackingParams": "CG4Q0_YHGLABIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "7 phút, 46 giây でも"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.466620.467940"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "467940",
+          "endMs": "472680",
+          "snippet": {
+            "runs": [
+              {
+                "text": "悲しいことに日本に行った時にその"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "7:47"
+          },
+          "trackingParams": "CG0Q0_YHGLEBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "7 phút, 47 giây 悲しいことに日本に行った時にその"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.467940.472680"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "472680",
+          "endMs": "473759",
+          "snippet": {
+            "runs": [
+              {
+                "text": "彼と"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "7:52"
+          },
+          "trackingParams": "CGwQ0_YHGLIBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "7 phút, 52 giây 彼と"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.472680.473759"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "473759",
+          "endMs": "476599",
+          "snippet": {
+            "runs": [
+              {
+                "text": "別れてしまいました"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "7:53"
+          },
+          "trackingParams": "CGsQ0_YHGLMBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "7 phút, 53 giây 別れてしまいました"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.473759.476599"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "476940",
+          "endMs": "479580",
+          "snippet": {
+            "runs": [
+              {
+                "text": "男女の愛については"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "7:56"
+          },
+          "trackingParams": "CGoQ0_YHGLQBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "7 phút, 56 giây 男女の愛については"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.476940.479580"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "479580",
+          "endMs": "482400",
+          "snippet": {
+            "runs": [
+              {
+                "text": "仕方がないですがその"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "7:59"
+          },
+          "trackingParams": "CGkQ0_YHGLUBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "7 phút, 59 giây 仕方がないですがその"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.479580.482400"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "482400",
+          "endMs": "486720",
+          "snippet": {
+            "runs": [
+              {
+                "text": "代わりにだんだん日本語への愛が"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "8:02"
+          },
+          "trackingParams": "CGgQ0_YHGLYBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "8 phút, 2 giây 代わりにだんだん日本語への愛が"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.482400.486720"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "486720",
+          "endMs": "489380",
+          "snippet": {
+            "runs": [
+              {
+                "text": "増えていきました"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "8:06"
+          },
+          "trackingParams": "CGcQ0_YHGLcBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "8 phút, 6 giây 増えていきました"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.486720.489380"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "490199",
+          "endMs": "495599",
+          "snippet": {
+            "runs": [
+              {
+                "text": "さあ皆さん日本語を勉強するとき一番"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "8:10"
+          },
+          "trackingParams": "CGYQ0_YHGLgBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "8 phút, 10 giây さあ皆さん日本語を勉強するとき一番"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.490199.495599"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "495599",
+          "endMs": "499819",
+          "snippet": {
+            "runs": [
+              {
+                "text": "難しいことは何ですか"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "8:15"
+          },
+          "trackingParams": "CGUQ0_YHGLkBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "8 phút, 15 giây 難しいことは何ですか"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.495599.499819"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "500639",
+          "endMs": "503400",
+          "snippet": {
+            "runs": [
+              {
+                "text": "外国人にとってやっぱり"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "8:20"
+          },
+          "trackingParams": "CGQQ0_YHGLoBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "8 phút, 20 giây 外国人にとってやっぱり"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.500639.503400"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "503400",
+          "endMs": "506039",
+          "snippet": {
+            "runs": [
+              {
+                "text": "会話ですよね"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "8:23"
+          },
+          "trackingParams": "CGMQ0_YHGLsBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "8 phút, 23 giây 会話ですよね"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.503400.506039"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "506039",
+          "endMs": "509900",
+          "snippet": {
+            "runs": [
+              {
+                "text": "初めて日本に来た時日本人と"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "8:26"
+          },
+          "trackingParams": "CGIQ0_YHGLwBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "8 phút, 26 giây 初めて日本に来た時日本人と"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.506039.509900"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "509900",
+          "endMs": "512640",
+          "snippet": {
+            "runs": [
+              {
+                "text": "コミュニケーションが取れなくて"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "8:29"
+          },
+          "trackingParams": "CGEQ0_YHGL0BIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "8 phút, 29 giây コミュニケーションが取れなくて"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.509900.512640"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "512640",
+          "endMs": "514740",
+          "snippet": {
+            "runs": [
+              {
+                "text": "ショックでした"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "8:32"
+          },
+          "trackingParams": "CGAQ0_YHGL4BIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "8 phút, 32 giây ショックでした"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.512640.514740"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "514740",
+          "endMs": "519120",
+          "snippet": {
+            "runs": [
+              {
+                "text": "その時の私の悩みは"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "8:34"
+          },
+          "trackingParams": "CF8Q0_YHGL8BIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "8 phút, 34 giây その時の私の悩みは"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.514740.519120"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "519120",
+          "endMs": "520380",
+          "snippet": {
+            "runs": [
+              {
+                "text": "ネパール人や"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "8:39"
+          },
+          "trackingParams": "CF4Q0_YHGMABIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "8 phút, 39 giây ネパール人や"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.519120.520380"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "520380",
+          "endMs": "521479",
+          "snippet": {
+            "runs": [
+              {
+                "text": "インド人"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "8:40"
+          },
+          "trackingParams": "CF0Q0_YHGMEBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "8 phút, 40 giây インド人"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.520380.521479"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "521479",
+          "endMs": "523620",
+          "snippet": {
+            "runs": [
+              {
+                "text": "パキスタン人などの"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "8:41"
+          },
+          "trackingParams": "CFwQ0_YHGMIBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "8 phút, 41 giây パキスタン人などの"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.521479.523620"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "523620",
+          "endMs": "525600",
+          "snippet": {
+            "runs": [
+              {
+                "text": "外国人は"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "8:43"
+          },
+          "trackingParams": "CFsQ0_YHGMMBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "8 phút, 43 giây 外国人は"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.523620.525600"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "525600",
+          "endMs": "526860",
+          "snippet": {
+            "runs": [
+              {
+                "text": "N1や"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "8:45"
+          },
+          "trackingParams": "CFoQ0_YHGMQBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "8 phút, 45 giây N1や"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.525600.526860"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "526860",
+          "endMs": "530880",
+          "snippet": {
+            "runs": [
+              {
+                "text": "N2の日本語能力がないのにどうして"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "8:46"
+          },
+          "trackingParams": "CFkQ0_YHGMUBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "8 phút, 46 giây N2の日本語能力がないのにどうして"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.526860.530880"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "530880",
+          "endMs": "532260",
+          "snippet": {
+            "runs": [
+              {
+                "text": "そんなに"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "8:50"
+          },
+          "trackingParams": "CFgQ0_YHGMYBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "8 phút, 50 giây そんなに"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.530880.532260"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "532260",
+          "endMs": "537500",
+          "snippet": {
+            "runs": [
+              {
+                "text": "ペラペラ会話できるのということでした"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "8:52"
+          },
+          "trackingParams": "CFcQ0_YHGMcBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "8 phút, 52 giây ペラペラ会話できるのということでした"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.532260.537500"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "537600",
+          "endMs": "538860",
+          "snippet": {
+            "runs": [
+              {
+                "text": "ベトナム人は"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "8:57"
+          },
+          "trackingParams": "CFYQ0_YHGMgBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "8 phút, 57 giây ベトナム人は"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.537600.538860"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "538860",
+          "endMs": "541260",
+          "snippet": {
+            "runs": [
+              {
+                "text": "徹夜しても一生"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "8:58"
+          },
+          "trackingParams": "CFUQ0_YHGMkBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "8 phút, 58 giây 徹夜しても一生"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.538860.541260"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "541260",
+          "endMs": "543899",
+          "snippet": {
+            "runs": [
+              {
+                "text": "懸命勉強しても"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "9:01"
+          },
+          "trackingParams": "CFQQ0_YHGMoBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "9 phút, 1 giây 懸命勉強しても"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.541260.543899"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "543899",
+          "endMs": "545040",
+          "snippet": {
+            "runs": [
+              {
+                "text": "N2や"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "9:03"
+          },
+          "trackingParams": "CFMQ0_YHGMsBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "9 phút, 3 giây N2や"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.543899.545040"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "545040",
+          "endMs": "548720",
+          "snippet": {
+            "runs": [
+              {
+                "text": "N3の日本語能力があっても"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "9:05"
+          },
+          "trackingParams": "CFIQ0_YHGMwBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "9 phút, 5 giây N3の日本語能力があっても"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.545040.548720"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "548720",
+          "endMs": "551580",
+          "snippet": {
+            "runs": [
+              {
+                "text": "まだ日本人と"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "9:08"
+          },
+          "trackingParams": "CFEQ0_YHGM0BIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "9 phút, 8 giây まだ日本人と"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.548720.551580"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "551580",
+          "endMs": "553080",
+          "snippet": {
+            "runs": [
+              {
+                "text": "自信を持って"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "9:11"
+          },
+          "trackingParams": "CFAQ0_YHGM4BIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "9 phút, 11 giây 自信を持って"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.551580.553080"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "553080",
+          "endMs": "555800",
+          "snippet": {
+            "runs": [
+              {
+                "text": "会話できません"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "9:13"
+          },
+          "trackingParams": "CE8Q0_YHGM8BIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "9 phút, 13 giây 会話できません"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.553080.555800"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "556200",
+          "endMs": "557760",
+          "snippet": {
+            "runs": [
+              {
+                "text": "私も"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "9:16"
+          },
+          "trackingParams": "CE4Q0_YHGNABIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "9 phút, 16 giây 私も"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.556200.557760"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "557760",
+          "endMs": "560279",
+          "snippet": {
+            "runs": [
+              {
+                "text": "全く同じでした"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "9:17"
+          },
+          "trackingParams": "CE0Q0_YHGNEBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "9 phút, 17 giây 全く同じでした"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.557760.560279"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "560279",
+          "endMs": "562800",
+          "snippet": {
+            "runs": [
+              {
+                "text": "日本人と話した時"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "9:20"
+          },
+          "trackingParams": "CEwQ0_YHGNIBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "9 phút, 20 giây 日本人と話した時"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.560279.562800"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "562800",
+          "endMs": "565019",
+          "snippet": {
+            "runs": [
+              {
+                "text": "えっなんて言ったの"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "9:22"
+          },
+          "trackingParams": "CEsQ0_YHGNMBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "9 phút, 22 giây えっなんて言ったの"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.562800.565019"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "565019",
+          "endMs": "568019",
+          "snippet": {
+            "runs": [
+              {
+                "text": "わからないよと言われて"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "9:25"
+          },
+          "trackingParams": "CEoQ0_YHGNQBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "9 phút, 25 giây わからないよと言われて"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.565019.568019"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "568019",
+          "endMs": "571100",
+          "snippet": {
+            "runs": [
+              {
+                "text": "すぐに私はあー"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "9:28"
+          },
+          "trackingParams": "CEkQ0_YHGNUBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "9 phút, 28 giây すぐに私はあー"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.568019.571100"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "571100",
+          "endMs": "575279",
+          "snippet": {
+            "runs": [
+              {
+                "text": "大丈夫何でもないですと"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "9:31"
+          },
+          "trackingParams": "CEgQ0_YHGNYBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "9 phút, 31 giây 大丈夫何でもないですと"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.571100.575279"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "575279",
+          "endMs": "577200",
+          "snippet": {
+            "runs": [
+              {
+                "text": "答えました"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "9:35"
+          },
+          "trackingParams": "CEcQ0_YHGNcBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "9 phút, 35 giây 答えました"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.575279.577200"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "577200",
+          "endMs": "579420",
+          "snippet": {
+            "runs": [
+              {
+                "text": "でもそのまま"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "9:37"
+          },
+          "trackingParams": "CEYQ0_YHGNgBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "9 phút, 37 giây でもそのまま"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.577200.579420"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "579420",
+          "endMs": "583140",
+          "snippet": {
+            "runs": [
+              {
+                "text": "会話の練習をしなければ日本語の"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "9:39"
+          },
+          "trackingParams": "CEUQ0_YHGNkBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "9 phút, 39 giây 会話の練習をしなければ日本語の"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.579420.583140"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "583140",
+          "endMs": "585000",
+          "snippet": {
+            "runs": [
+              {
+                "text": "会話能力は"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "9:43"
+          },
+          "trackingParams": "CEQQ0_YHGNoBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "9 phút, 43 giây 会話能力は"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.583140.585000"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "585000",
+          "endMs": "585959",
+          "snippet": {
+            "runs": [
+              {
+                "text": "全く"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "9:45"
+          },
+          "trackingParams": "CEMQ0_YHGNsBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "9 phút, 45 giây 全く"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.585000.585959"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "585959",
+          "endMs": "588860",
+          "snippet": {
+            "runs": [
+              {
+                "text": "上手になりません"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "9:45"
+          },
+          "trackingParams": "CEIQ0_YHGNwBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "9 phút, 45 giây 上手になりません"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.585959.588860"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "589140",
+          "endMs": "590399",
+          "snippet": {
+            "runs": [
+              {
+                "text": "外国語の"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "9:49"
+          },
+          "trackingParams": "CEEQ0_YHGN0BIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "9 phút, 49 giây 外国語の"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.589140.590399"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "590399",
+          "endMs": "592560",
+          "snippet": {
+            "runs": [
+              {
+                "text": "勉強をするなら"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "9:50"
+          },
+          "trackingParams": "CEAQ0_YHGN4BIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "9 phút, 50 giây 勉強をするなら"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.590399.592560"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "592560",
+          "endMs": "596160",
+          "snippet": {
+            "runs": [
+              {
+                "text": "会話はとても大切なことだと"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "9:52"
+          },
+          "trackingParams": "CD8Q0_YHGN8BIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "9 phút, 52 giây 会話はとても大切なことだと"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.592560.596160"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "596160",
+          "endMs": "597450",
+          "snippet": {
+            "runs": [
+              {
+                "text": "気がつきました"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "9:56"
+          },
+          "trackingParams": "CD4Q0_YHGOABIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "9 phút, 56 giây 気がつきました"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.596160.597450"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "597450",
+          "endMs": "598920",
+          "snippet": {
+            "runs": [
+              {
+                "text": "[音楽]"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "9:57"
+          },
+          "trackingParams": "CD0Q0_YHGOEBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "9 phút, 57 giây [音楽]"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.597450.598920"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "598920",
+          "endMs": "601140",
+          "snippet": {
+            "runs": [
+              {
+                "text": "文法はまだまだ"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "9:58"
+          },
+          "trackingParams": "CDwQ0_YHGOIBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "9 phút, 58 giây 文法はまだまだ"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.598920.601140"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "601140",
+          "endMs": "603720",
+          "snippet": {
+            "runs": [
+              {
+                "text": "完璧じゃなくても"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "10:01"
+          },
+          "trackingParams": "CDsQ0_YHGOMBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "10 phút, 1 giây 完璧じゃなくても"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.601140.603720"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "603720",
+          "endMs": "605160",
+          "snippet": {
+            "runs": [
+              {
+                "text": "きらめずに"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "10:03"
+          },
+          "trackingParams": "CDoQ0_YHGOQBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "10 phút, 3 giây きらめずに"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.603720.605160"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "605160",
+          "endMs": "607500",
+          "snippet": {
+            "runs": [
+              {
+                "text": "挑戦し続ければ"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "10:05"
+          },
+          "trackingParams": "CDkQ0_YHGOUBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "10 phút, 5 giây 挑戦し続ければ"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.605160.607500"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "607500",
+          "endMs": "610620",
+          "snippet": {
+            "runs": [
+              {
+                "text": "会話はどんどん上手になります"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "10:07"
+          },
+          "trackingParams": "CDgQ0_YHGOYBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "10 phút, 7 giây 会話はどんどん上手になります"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.607500.610620"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "610620",
+          "endMs": "612660",
+          "snippet": {
+            "runs": [
+              {
+                "text": "[音楽]"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "10:10"
+          },
+          "trackingParams": "CDcQ0_YHGOcBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "10 phút, 10 giây [音楽]"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.610620.612660"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "612660",
+          "endMs": "614760",
+          "snippet": {
+            "runs": [
+              {
+                "text": "外国語の勉強は"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "10:12"
+          },
+          "trackingParams": "CDYQ0_YHGOgBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "10 phút, 12 giây 外国語の勉強は"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.612660.614760"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "614760",
+          "endMs": "616860",
+          "snippet": {
+            "runs": [
+              {
+                "text": "自信を持つことも"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "10:14"
+          },
+          "trackingParams": "CDUQ0_YHGOkBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "10 phút, 14 giây 自信を持つことも"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.614760.616860"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "616860",
+          "endMs": "619760",
+          "snippet": {
+            "runs": [
+              {
+                "text": "必要だと思います"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "10:16"
+          },
+          "trackingParams": "CDQQ0_YHGOoBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "10 phút, 16 giây 必要だと思います"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.616860.619760"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "620160",
+          "endMs": "622019",
+          "snippet": {
+            "runs": [
+              {
+                "text": "自信を持って"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "10:20"
+          },
+          "trackingParams": "CDMQ0_YHGOsBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "10 phút, 20 giây 自信を持って"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.620160.622019"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "622019",
+          "endMs": "623160",
+          "snippet": {
+            "runs": [
+              {
+                "text": "堂々と"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "10:22"
+          },
+          "trackingParams": "CDIQ0_YHGOwBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "10 phút, 22 giây 堂々と"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.622019.623160"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "623160",
+          "endMs": "626660",
+          "snippet": {
+            "runs": [
+              {
+                "text": "会話した方がいいです"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "10:23"
+          },
+          "trackingParams": "CDEQ0_YHGO0BIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "10 phút, 23 giây 会話した方がいいです"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.623160.626660"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "626940",
+          "endMs": "629820",
+          "snippet": {
+            "runs": [
+              {
+                "text": "もちろん最初から"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "10:26"
+          },
+          "trackingParams": "CDAQ0_YHGO4BIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "10 phút, 26 giây もちろん最初から"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.626940.629820"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "629820",
+          "endMs": "633680",
+          "snippet": {
+            "runs": [
+              {
+                "text": "完璧にできる人はいません"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "10:29"
+          },
+          "trackingParams": "CC8Q0_YHGO8BIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "10 phút, 29 giây 完璧にできる人はいません"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.629820.633680"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "634019",
+          "endMs": "637380",
+          "snippet": {
+            "runs": [
+              {
+                "text": "外国語の勉強をすることは"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "10:34"
+          },
+          "trackingParams": "CC4Q0_YHGPABIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "10 phút, 34 giây 外国語の勉強をすることは"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.634019.637380"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "637380",
+          "endMs": "638519",
+          "snippet": {
+            "runs": [
+              {
+                "text": "雨だれ"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "10:37"
+          },
+          "trackingParams": "CC0Q0_YHGPEBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "10 phút, 37 giây 雨だれ"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.637380.638519"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "638519",
+          "endMs": "643440",
+          "snippet": {
+            "runs": [
+              {
+                "text": "石を穿つということだと思います"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "10:38"
+          },
+          "trackingParams": "CCwQ0_YHGPIBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "10 phút, 38 giây 石を穿つということだと思います"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.638519.643440"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "643440",
+          "endMs": "646800",
+          "snippet": {
+            "runs": [
+              {
+                "text": "どんなに外国語を学んでも"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "10:43"
+          },
+          "trackingParams": "CCsQ0_YHGPMBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "10 phút, 43 giây どんなに外国語を学んでも"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.643440.646800"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "646800",
+          "endMs": "648000",
+          "snippet": {
+            "runs": [
+              {
+                "text": "必ず"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "10:46"
+          },
+          "trackingParams": "CCoQ0_YHGPQBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "10 phút, 46 giây 必ず"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.646800.648000"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "648000",
+          "endMs": "651600",
+          "snippet": {
+            "runs": [
+              {
+                "text": "誰かと会話しアウトプットしなければなり"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "10:48"
+          },
+          "trackingParams": "CCkQ0_YHGPUBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "10 phút, 48 giây 誰かと会話しアウトプットしなければなり"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.648000.651600"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "651600",
+          "endMs": "653899",
+          "snippet": {
+            "runs": [
+              {
+                "text": "ません"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "10:51"
+          },
+          "trackingParams": "CCgQ0_YHGPYBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "10 phút, 51 giây ません"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.651600.653899"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "653940",
+          "endMs": "657180",
+          "snippet": {
+            "runs": [
+              {
+                "text": "実は私は日本に来て"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "10:53"
+          },
+          "trackingParams": "CCcQ0_YHGPcBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "10 phút, 53 giây 実は私は日本に来て"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.653940.657180"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "657180",
+          "endMs": "660420",
+          "snippet": {
+            "runs": [
+              {
+                "text": "すでに3年経ちました"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "10:57"
+          },
+          "trackingParams": "CCYQ0_YHGPgBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "10 phút, 57 giây すでに3年経ちました"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.657180.660420"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "660420",
+          "endMs": "663060",
+          "snippet": {
+            "runs": [
+              {
+                "text": "日本での生活にも"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "11:00"
+          },
+          "trackingParams": "CCUQ0_YHGPkBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "11 phút 日本での生活にも"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.660420.663060"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "663060",
+          "endMs": "664380",
+          "snippet": {
+            "runs": [
+              {
+                "text": "少しずつ"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "11:03"
+          },
+          "trackingParams": "CCQQ0_YHGPoBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "11 phút, 3 giây 少しずつ"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.663060.664380"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "664380",
+          "endMs": "666180",
+          "snippet": {
+            "runs": [
+              {
+                "text": "慣れてきました"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "11:04"
+          },
+          "trackingParams": "CCMQ0_YHGPsBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "11 phút, 4 giây 慣れてきました"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.664380.666180"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "666180",
+          "endMs": "669839",
+          "snippet": {
+            "runs": [
+              {
+                "text": "どんなに大変でも一人で"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "11:06"
+          },
+          "trackingParams": "CCIQ0_YHGPwBIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "11 phút, 6 giây どんなに大変でも一人で"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.666180.669839"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "669839",
+          "endMs": "671040",
+          "snippet": {
+            "runs": [
+              {
+                "text": "異国に来て"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "11:09"
+          },
+          "trackingParams": "CCEQ0_YHGP0BIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "11 phút, 9 giây 異国に来て"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.669839.671040"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "671040",
+          "endMs": "672480",
+          "snippet": {
+            "runs": [
+              {
+                "text": "勉強したり"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "11:11"
+          },
+          "trackingParams": "CCAQ0_YHGP4BIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "11 phút, 11 giây 勉強したり"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.671040.672480"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "672480",
+          "endMs": "675959",
+          "snippet": {
+            "runs": [
+              {
+                "text": "生活したりすることは一生"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "11:12"
+          },
+          "trackingParams": "CB8Q0_YHGP8BIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "11 phút, 12 giây 生活したりすることは一生"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.672480.675959"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "675959",
+          "endMs": "680100",
+          "snippet": {
+            "runs": [
+              {
+                "text": "忘れられない経験になると思います"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "11:15"
+          },
+          "trackingParams": "CB4Q0_YHGIACIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "11 phút, 15 giây 忘れられない経験になると思います"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.675959.680100"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "680100",
+          "endMs": "681360",
+          "snippet": {
+            "runs": [
+              {
+                "text": "だから"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "11:20"
+          },
+          "trackingParams": "CB0Q0_YHGIECIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "11 phút, 20 giây だから"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.680100.681360"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "681360",
+          "endMs": "682500",
+          "snippet": {
+            "runs": [
+              {
+                "text": "皆さんも"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "11:21"
+          },
+          "trackingParams": "CBwQ0_YHGIICIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "11 phút, 21 giây 皆さんも"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.681360.682500"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "682500",
+          "endMs": "684899",
+          "snippet": {
+            "runs": [
+              {
+                "text": "頑張ってください"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "11:22"
+          },
+          "trackingParams": "CBsQ0_YHGIMCIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "11 phút, 22 giây 頑張ってください"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.682500.684899"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "684899",
+          "endMs": "686940",
+          "snippet": {
+            "runs": [
+              {
+                "text": "最後に今日"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "11:24"
+          },
+          "trackingParams": "CBoQ0_YHGIQCIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "11 phút, 24 giây 最後に今日"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.684899.686940"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "686940",
+          "endMs": "691079",
+          "snippet": {
+            "runs": [
+              {
+                "text": "皆さんにお伝えしたいことをまとめると"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "11:26"
+          },
+          "trackingParams": "CBkQ0_YHGIUCIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "11 phút, 26 giây 皆さんにお伝えしたいことをまとめると"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.686940.691079"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "691079",
+          "endMs": "692040",
+          "snippet": {
+            "runs": [
+              {
+                "text": "今"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "11:31"
+          },
+          "trackingParams": "CBgQ0_YHGIYCIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "11 phút, 31 giây 今"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.691079.692040"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "692040",
+          "endMs": "696060",
+          "snippet": {
+            "runs": [
+              {
+                "text": "居眠りすればあなたは夢を見る"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "11:32"
+          },
+          "trackingParams": "CBcQ0_YHGIcCIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "11 phút, 32 giây 居眠りすればあなたは夢を見る"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.692040.696060"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "696060",
+          "endMs": "697800",
+          "snippet": {
+            "runs": [
+              {
+                "text": "でも今"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "11:36"
+          },
+          "trackingParams": "CBYQ0_YHGIgCIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "11 phút, 36 giây でも今"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.696060.697800"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "697800",
+          "endMs": "700740",
+          "snippet": {
+            "runs": [
+              {
+                "text": "勉強すればあなたは"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "11:37"
+          },
+          "trackingParams": "CBUQ0_YHGIkCIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "11 phút, 37 giây 勉強すればあなたは"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.697800.700740"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "700740",
+          "endMs": "703640",
+          "snippet": {
+            "runs": [
+              {
+                "text": "夢をかなえる"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "11:40"
+          },
+          "trackingParams": "CBQQ0_YHGIoCIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "11 phút, 40 giây 夢をかなえる"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.700740.703640"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "703680",
+          "endMs": "705660",
+          "snippet": {
+            "runs": [
+              {
+                "text": "さて今日も"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "11:43"
+          },
+          "trackingParams": "CBMQ0_YHGIsCIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "11 phút, 43 giây さて今日も"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.703680.705660"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "705660",
+          "endMs": "709440",
+          "snippet": {
+            "runs": [
+              {
+                "text": "聞いていただきありがとうございます"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "11:45"
+          },
+          "trackingParams": "CBIQ0_YHGIwCIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "11 phút, 45 giây 聞いていただきありがとうございます"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.705660.709440"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "709440",
+          "endMs": "710760",
+          "snippet": {
+            "runs": [
+              {
+                "text": "では"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "11:49"
+          },
+          "trackingParams": "CBEQ0_YHGI0CIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "11 phút, 49 giây では"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.709440.710760"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "710760",
+          "endMs": "711899",
+          "snippet": {
+            "runs": [
+              {
+                "text": "ご注文は"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "11:50"
+          },
+          "trackingParams": "CBAQ0_YHGI4CIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "11 phút, 50 giây ご注文は"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.710760.711899"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "711899",
+          "endMs": "714000",
+          "snippet": {
+            "runs": [
+              {
+                "text": "Podcastですか"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "11:51"
+          },
+          "trackingParams": "CA8Q0_YHGI8CIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "11 phút, 51 giây Podcastですか"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.711899.714000"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "714000",
+          "endMs": "715260",
+          "snippet": {
+            "runs": [
+              {
+                "text": "今日の"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "11:54"
+          },
+          "trackingParams": "CA4Q0_YHGJACIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "11 phút, 54 giây 今日の"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.714000.715260"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "715260",
+          "endMs": "718079",
+          "snippet": {
+            "runs": [
+              {
+                "text": "Podcastを終わります"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "11:55"
+          },
+          "trackingParams": "CA0Q0_YHGJECIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "11 phút, 55 giây Podcastを終わります"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.715260.718079"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "718079",
+          "endMs": "719880",
+          "snippet": {
+            "runs": [
+              {
+                "text": "今日も最後まで"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "11:58"
+          },
+          "trackingParams": "CAwQ0_YHGJICIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "11 phút, 58 giây 今日も最後まで"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.718079.719880"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "719880",
+          "endMs": "721560",
+          "snippet": {
+            "runs": [
+              {
+                "text": "聞いていただき"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "11:59"
+          },
+          "trackingParams": "CAsQ0_YHGJMCIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "11 phút, 59 giây 聞いていただき"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.719880.721560"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "721560",
+          "endMs": "724560",
+          "snippet": {
+            "runs": [
+              {
+                "text": "本当にありがとうございます"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "12:01"
+          },
+          "trackingParams": "CAoQ0_YHGJQCIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "12 phút, 1 giây 本当にありがとうございます"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.721560.724560"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "724560",
+          "endMs": "725579",
+          "snippet": {
+            "runs": [
+              {
+                "text": "フォロー"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "12:04"
+          },
+          "trackingParams": "CAkQ0_YHGJUCIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "12 phút, 4 giây フォロー"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.724560.725579"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "725579",
+          "endMs": "728600",
+          "snippet": {
+            "runs": [
+              {
+                "text": "チャンネル登録をよろしくお願い致します"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "12:05"
+          },
+          "trackingParams": "CAgQ0_YHGJYCIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "12 phút, 5 giây チャンネル登録をよろしくお願い致します"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.725579.728600"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "728600",
+          "endMs": "730500",
+          "snippet": {
+            "runs": [
+              {
+                "text": "また"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "12:08"
+          },
+          "trackingParams": "CAcQ0_YHGJcCIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "12 phút, 8 giây また"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.728600.730500"
+        }
+      },
+      {
+        "transcriptSegmentRenderer": {
+          "startMs": "730500",
+          "endMs": "735380",
+          "snippet": {
+            "runs": [
+              {
+                "text": "次回お会いしましょうバイバーイ"
+              }
+            ]
+          },
+          "startTimeText": {
+            "simpleText": "12:10"
+          },
+          "trackingParams": "CAYQ0_YHGJgCIhMIlJihrrethgMVlFf1BR1YogLc",
+          "accessibility": {
+            "accessibilityData": {
+              "label": "12 phút, 10 giây 次回お会いしましょうバイバーイ"
+            }
+          },
+          "targetId": "deY9jHZpXqk.CgNhc3ISAmphGgA%3D.730500.735380"
+        }
+      }
+    ]
+
 const MOCK_DATA = {
   VOCA_N3,
   authResponse,
-  VocaN3_1
+  VocaN3_1,
+  dataa
 };
 export default MOCK_DATA;

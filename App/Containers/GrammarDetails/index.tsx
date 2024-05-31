@@ -21,6 +21,8 @@ export default function GrammarDetails({ navigation }: any) {
   const Voca_N3_1 = Mock.VocaN3_1;
   const route = useRoute();
   const [lists, setLists] = useState([]);
+  const [isQuizStarted, setIsQuizStarted] = useState(false);
+
   let api: string;
   // @ts-ignore
   const { level, cate, name, page } = route.params;
@@ -61,6 +63,52 @@ export default function GrammarDetails({ navigation }: any) {
         break;
     }
   }
+
+  const createQuiz = (data: Vocabulary[], numberOfQuestions: number) => {
+
+    const usedIndices = new Set<number>();
+
+    while (questions.length < numberOfQuestions) {
+      const questionIndex = getRandomInt(data.length);
+      if (usedIndices.has(questionIndex)) continue;
+
+      const questionItem = data[questionIndex];
+      const { Kanji, Meaning } = questionItem;
+      usedIndices.add(questionIndex);
+
+      const options = new Set<string>();
+      options.add(Meaning);
+
+      while (options.size < 4) {
+        const optionIndex = getRandomInt(data.length);
+        options.add(data[optionIndex].Meaning);
+      }
+
+      const shuffledOptions = Array.from(options).sort(() => Math.random() - 0.5);
+
+      questions.push({
+        question: `Nghĩa của từ '${Kanji}' là gì?`,
+        options: shuffledOptions,
+        answer: Meaning
+      });
+
+
+    }
+    setIsQuizStarted(true);
+    console.log("question", questions);
+  };
+  const questions: { question: string; options: string[]; answer: string }[] = [];
+// const  [listQuestion,setListQuestion]= useState(questions[])
+
+  const getRandomInt = (max: number) => {
+    return Math.floor(Math.random() * max);
+  };
+  type Vocabulary = {
+    Kanji: string;
+    Hiragana: string;
+    Meaning: string;
+  };
+
   useEffect(() => {
     axios.get(api)
       .then(response => {
@@ -105,11 +153,15 @@ export default function GrammarDetails({ navigation }: any) {
       <TouchableOpacity style={{
         height: 40,
         width: 120,
-        backgroundColor: "#a4846d",
+        backgroundColor: "#2a4d69",
         borderRadius: 10,
         justifyContent: "center",
         alignSelf: "center"
-      }}>
+      }}
+                        onPress={() => {
+                          createQuiz(Voca_N3_1, 10),
+                            navigation.navigate("FlashCardTest", { data: questions });
+                        }}>
         <Text style={{ color: "white", textAlign: "center" }}>Luyện tập</Text>
       </TouchableOpacity>
     </SafeAreaView>

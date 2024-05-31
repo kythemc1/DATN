@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {
-    StyleSheet,
-} from 'react-native';
+    StyleSheet, Text, View
+} from "react-native";
 import {SafeAreaView} from 'react-native-safe-area-context';
 import HeaderChat from "Components/Commons/HeaderChat";
 import {useRoute} from "@react-navigation/native";
@@ -37,7 +37,18 @@ export default function ListenListVideo({navigation}: { navigation: any }) {
 
     return (
         <SafeAreaView style={styles.container}>
-            <HeaderChat screenBack={'TabNavigation'} navigation={navigation}/>
+            <View style={{ backgroundColor: "#2a4d69" }}>
+                <Text style={{
+                    fontSize: 20,
+                    color: "white",
+                    textAlign: "center",
+                    marginTop: 20,
+                    marginBottom: 10,
+                    fontWeight: "bold"
+                }}>
+                    {level} Nghe hiểu
+                </Text>
+            </View>
             {
                 lists.map(({listenId, url}, index)=>(
                     <ComponentPressToListen key={index} name={'Listen'} navigation={navigation} id={listenId} level={level} url={url} pressToScreen={'ListenDetails'}/>
@@ -48,7 +59,7 @@ export default function ListenListVideo({navigation}: { navigation: any }) {
 }
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: '#f9f4f4',
+        backgroundColor: '#2a4d69',
         flex: 1,
     }
 });

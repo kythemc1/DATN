@@ -9,11 +9,11 @@ export default function Vocabulary() {
   return (
     <SafeAreaView style={styles.container}>
 
-        <View style={{backgroundColor: "#2a4d69"}}>
-          <Text style={{fontSize :20,marginLeft: 20,color: '#fff'}}>
-            Vocabulary
-          </Text>
-        </View>
+      <View style={{backgroundColor:'#2a4d69'}}>
+        <Text style={{fontSize :20,marginLeft: 20,color: 'white',fontWeight:'bold',marginTop:20,textAlign:'center'}}>
+          Từ vựng
+        </Text>
+      </View>
         <SwitchTabLevelVocabulary ></SwitchTabLevelVocabulary>
        </SafeAreaView>
   );

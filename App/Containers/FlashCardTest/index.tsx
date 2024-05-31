@@ -11,101 +11,43 @@ import HeaderChat from "Components/Commons/HeaderChat";
 import { Colors } from "react-native-ui-lib";
 import Mock from "Utils/Mock";
 import ListQuiz from "Components/ListQuiz";
+import { useRoute } from "@react-navigation/native";
+import RenderListTuVung from "Components/RenderListTuVung";
 
 
-export default function FlashCardTest({ navigation, data }: any) {
-  const Voca_N3_1 = Mock.VocaN3_1;
-
-  const [countdown, setCountdown] = useState(3);
-  const [isQuizStarted, setIsQuizStarted] = useState(false);
-  const [timeElapsed, setTimeElapsed] = useState(0);
-  const [intervalId, setIntervalId] = useState<NodeJS.Timeout | null>(null);
-  useEffect(() => {
-
-    if (countdown > 0) {
-      const timerId = setTimeout(() => setCountdown(countdown - 1), 1000);
-      return () => clearTimeout(timerId);
-    } else if (countdown === 0) {
-      createQuiz(Voca_N3_1,10)
-      setIsQuizStarted(true);
-      const startTime = Date.now();
-      const id = setInterval(() => {
-        setTimeElapsed(Math.floor((Date.now() - startTime) / 1000));
-      }, 1000);
-      setIntervalId(id);
-    }
-  }, [countdown]);
-
-  const handleEndQuiz = () => {
-    if (intervalId) clearInterval(intervalId);
-    setIsQuizStarted(false);
-  };
-
-  const questions: { question: string; options: string[]; answer: string }[] = [];
-  const getRandomInt = (max: number) => {
-    return Math.floor(Math.random() * max);
-  };
-  type Vocabulary = {
-    Kanji: string;
-    Hiragana: string;
-    Meaning: string;
-  };
-  const createQuiz = (data: Vocabulary[], numberOfQuestions: number) => {
-
-    const usedIndices = new Set<number>();
-
-    while (questions.length < numberOfQuestions) {
-      const questionIndex = getRandomInt(data.length);
-      if (usedIndices.has(questionIndex)) continue;
-
-      const questionItem = data[questionIndex];
-      const { Kanji, Meaning } = questionItem;
-      usedIndices.add(questionIndex);
-
-      const options = new Set<string>();
-      options.add(Meaning);
-
-      while (options.size < 4) {
-        const optionIndex = getRandomInt(data.length);
-        options.add(data[optionIndex].Meaning);
-      }
-
-      const shuffledOptions = Array.from(options).sort(() => Math.random() - 0.5);
-
-      questions.push({
-        question: `Nghĩa của từ '${Kanji}' là gì?`,
-        options: shuffledOptions,
-        answer: Meaning
-      });
-    }
+export default function FlashCardTest({ navigation }: any) {
+  const route = useRoute();
 
 
-  };
-
-
+  // @ts-ignore
+  const { data } = route.params;
   return (
     <SafeAreaView style={styles.container}>
       <HeaderChat navigation={navigation} screenBack={"TabNavigation"} />
-      {countdown > 0 ? (
-        <Text style={styles.countdownText}>{countdown}</Text>
-      ) : (
-        <View style={styles.quizContainer}>
-          {/*<Text style={styles.timerText}>Thời gian: {timeElapsed} giây</Text>*/}
-          {/*{isQuizStarted && (*/}
-          {/*  <TouchableOpacity style={styles.button} onPress={handleEndQuiz}>*/}
-          {/*    <Text style={styles.buttonText}>Kết thúc</Text>*/}
-          {/*  </TouchableOpacity>*/}
-          {/*)}*/}
-          <View>
-            {
-              questions.map((item,index)=>(
-                <ListQuiz key={index} state={{question:item.question,options:item.options,answer:item.answer}}></ListQuiz>
-              ))
-            }
-          </View>
+      {/*<TouchableOpacity onPress={() => {*/}
+      {/*  createQuiz(Voca_N3_1, 10);*/}
+      {/*}}>*/}
+      {/*  <Text>Bắt đầu</Text>*/}
+      {/*</TouchableOpacity>*/}
+      {/*<View>*/}
+      {/*  {*/}
+      {/*    data?.map((item: { question: any; options: any; answer: any; }, index: React.Key | null | undefined) => (*/}
+      {/*      <ListQuiz key={index}*/}
+      {/*                state={{ question: item.question, options: item.options, answer: item.answer }}></ListQuiz>*/}
+      {/*    ))*/}
+      {/*  }*/}
+      {/*</View>*/}
 
-        </View>
-      )}
+      <FlatList
+        data={data}
+        renderItem={({ item }) => <ListQuiz state={item} />}
+        keyExtractor={item => item.Kanji}
+        horizontal
+        snapToInterval={Dimensions.get("window").width} // Đặt khoảng cách giữa các điểm dừng bằng chiều rộng màn hình
+        snapToAlignment="center" // Căn giữa các thẻ khi dừng lại
+        decelerationRate="fast" // Tăng tốc độ dừng lại của thẻ
+        showsHorizontalScrollIndicator={false} // Ẩn thanh cuộn ngang
+      />
     </SafeAreaView>
   );
 }

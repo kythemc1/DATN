@@ -1,10 +1,10 @@
 import {
-    Dimensions,
+    Dimensions, Image,
     StyleSheet,
     Text,
     TouchableOpacity,
-    View,
-} from 'react-native';
+    View
+} from "react-native";
 import React from 'react';
 import {Colors} from 'react-native-ui-lib';
 interface props {
@@ -17,35 +17,54 @@ interface props {
 }
 export default function ComponentPressToListen(props: props) {
     return (
-        <View style={styles.container}>
-            <TouchableOpacity
-                style={styles.pressShow}
-                onPress={() => {
-                    props.navigation.navigate(props.pressToScreen,{level : props.level,name: props.name,id: props.id,url: props.url});
-                }}>
-                <Text style={styles.textTittle}>{props.name}{'   '+props.level}{'   '+props.id}</Text>
-            </TouchableOpacity>
-        </View>
+      <View style={styles.container}>
+          <View>
+              <Image style={{ height: 40, width: 40, marginLeft: 15 }}
+                     source={require("../../Assets/Images/radio.png")}></Image>
+          </View>
+
+          <View style={{ justifyContent: "center", marginLeft   : 10 }}>
+              <Text style={{ fontSize: 20, fontWeight: "bold", color: "black" }}>Bài: {props.name}</Text>
+              <View style={{ flexDirection: "row" }}>
+                  <Text style={{}}>Level: </Text>
+                  <Text>{props.level}</Text>
+              </View>
+          </View>
+          <TouchableOpacity style={{ justifyContent: "center", marginLeft: 130 }} onPress={() => {
+              props.navigation.navigate(props.pressToScreen, {
+                  level: props.level,
+                  name: props.name,
+                  // cate: props.cate,
+                  // page: props.page
+              });
+          }}>
+              <Image style={{ height: 30, width: 30, marginLeft: 15 }}
+                     source={require("../../Assets/Images/play-button.png")}></Image>
+              <Text>Bắt đầu</Text>
+          </TouchableOpacity>
+      </View>
     );
 }
 const styles = StyleSheet.create({
     container: {
         // padding: 10,
-        borderWidth: 1,
-        borderColor: 'black',
-        width: Dimensions.get('window').width * 0.9,
-        alignSelf: 'center',
+        // borderWidth: 1,
+        width: Dimensions.get("window").width * 0.9,
+        alignSelf: "center",
         borderRadius: 20,
         // marginBottom: 20,
-        marginTop: 20
+        marginTop: 10,
+        flexDirection: "row",
+        backgroundColor: "white",
+        padding: 2
     },
     textTittle: {
         color: Colors.text,
-        fontFamily: 'Poppins-Regular',
+        fontFamily: "Poppins-Regular",
         fontSize: 15,
-        textAlign: 'center',
+        textAlign: "center"
     },
     pressShow: {
-        padding: 10,
-    },
+        padding: 10
+    }
 });

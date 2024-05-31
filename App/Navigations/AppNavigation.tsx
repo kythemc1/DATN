@@ -33,7 +33,7 @@ export default function AppNavigation() {
   // const isLogged = useSelector((state: RootState) => state.auth.auth.isLogged);
 
   const getInitialRouteName = () => {
-    return 'FlashCardTest';
+    return 'TabNavigation';
   };
 
   const onRef = (ref: any) => {
@@ -48,8 +48,8 @@ export default function AppNavigation() {
     <SafeAreaView style={{flex:1}}>
       <StatusBar
         translucent
-        backgroundColor={'white'}
-        barStyle={'dark-content'}
+        backgroundColor={'#2a4d69'}
+        barStyle={'light-content'}
       />
       <NavigationContainer ref={navigationRef}>
         <Stack.Navigator
