@@ -1,33 +1,46 @@
 import React, { Component } from "react";
-import {StyleSheet, Pressable, Text, View, Image, TouchableOpacity, ScrollView} from "react-native";
+import { StyleSheet, Pressable, Text, View, Image, TouchableOpacity, ScrollView, SafeAreaView } from "react-native";
 import {useSelector} from "react-redux";
 import {RootState} from "Store/reduxProvider";
-import {black} from "react-native-paper/lib/typescript/styles/themes/v2/colors";
-// import image from "../../Assets/Images/radio.png"
-export default function UserProfileView()  {
+
+export default function UserProfileView({ navigation }: any)  {
     const username = useSelector((state: RootState)=> state.auth.user?.username)
     const address = useSelector((state: RootState)=> state.auth.user?.address)
     const firstname = useSelector((state: RootState)=> state.auth.user?.firstName)
     const lastname = useSelector((state: RootState)=> state.auth.user?.lastName)
 
 
-
         return (
-            <View style={styles.container}>
+            <SafeAreaView style={styles.container}>
+                <View style={{
+                    backgroundColor: "#2a4d69",
+                    paddingBottom: 20,
+                    flexDirection: "row",
+                    position: "relative",
+                }}>
+                    <Text style={{
+                        fontSize: 20,
+                        marginLeft: 20,
+                        color: "white",
+                        fontWeight: "bold",
+                        textAlign: "center",
+                        flex: 1
+                    }}>
+                        Thông tin người dùng
+                    </Text>
+                    <TouchableOpacity
+                      style={{ position: "absolute", marginLeft: 5, marginTop: 2 }}
+                      onPress={() => {
+                          navigation.goBack();
+                      }}>
+                        <Image
+                          style={{ height: 20, width: 20 }}
+                          source={require("../../Assets/Images/left-chevron.png")}
+                        />
+                    </TouchableOpacity>
+                </View>
                 <View style={styles.header}>
-                    <View>
-                        <Image
-                            style={styles.location}
-                            source={require("../../Assets/Images/ion-back.png")}
-                        />
-                    </View>
-                    <View>
-                        <Image
-                            style={styles.hamburger}
-                            source={require("../../Assets/Images/help.png")}
-                        />
-                    </View>
-                    <View style={styles.headerContent}>
+                        <View style={styles.headerContent}>
                         <View style={{ flex: 1 }}>
                             <Text style={styles.name}>Welcome</Text>
                             <Text style={styles.userInfo}>{username}</Text>
@@ -39,19 +52,17 @@ export default function UserProfileView()  {
                             />
                         </View>
                     </View>
-                    <View>
-                        <Text style={styles.text}>Do u want to change your profile ?</Text>
-                    </View>
+
                 </View>
                 <View style={styles.body}>
                     <ScrollView  >
                         <Pressable style={styles.RectangleShapeView}>
-                            <Text style={styles.headtText}>Address</Text>
-                            <Text style={styles.SubjectText}>{address}</Text>
+                            <Text style={styles.headtText}>Tên tài khoản</Text>
+                            <Text style={styles.SubjectText}>{username}</Text>
                         </Pressable>
                         <Pressable style={styles.RectangleShapeView}>
-                            <Text style={styles.headtText}>Date</Text>
-                            <Text style={styles.SubjectText}>30 Sept, 2022 </Text>
+                            <Text style={styles.headtText}>Email</Text>
+                            <Text style={styles.SubjectText}>aemanucians@gmail.com </Text>
                         </Pressable>
 
                         <Pressable style={styles.RectangleShapeView}>
@@ -71,22 +82,22 @@ export default function UserProfileView()  {
                     </ScrollView>
                 </View>
 
-            </View>
+            </SafeAreaView>
         );
 }
 
 const styles = StyleSheet.create({
+    container: { flex: 1, backgroundColor: "white",marginTop:24 },
     header: {
         backgroundColor: '#e7eff6',
         backgroundSize: "contain",
-        height: 300
+        height: 200
     },
 
     headerContent: {
         padding: 30,
         alignItems: "center",
         display: "flex",
-        flex: 1,
         flexDirection: "row",
         flexWrap: "wrap"
     },
@@ -171,8 +182,5 @@ const styles = StyleSheet.create({
         elevation: 3,
         alignSelf: "center"
     },
-    container: {
-        flex: 1
-    }
 
 });

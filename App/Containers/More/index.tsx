@@ -1,8 +1,6 @@
 import React from 'react';
 import {Image, View, Text, TouchableOpacity, ScrollView, StyleSheet, Dimensions} from 'react-native';
-import Header from '../../Components/Commons/Header/Header';
 import {Colors} from 'react-native-ui-lib';
-import ListenComponent from "Components/Commons/ListenComponent";
 import {SafeAreaView} from "react-native-safe-area-context";
 
 export default function More({navigation}: any) {
@@ -47,13 +45,13 @@ export default function More({navigation}: any) {
                           color: Colors.text,
                           fontSize: 18,
                       }}>
-                      Game
+                      Cài đặt
                   </Text>
                   {renderRowItem(
                       require('../../Assets/Images/change_password.png'),
-                      'Draw',
+                      'Thông tin người dùng',
                       () => {
-                          navigation.navigate('Intro');
+                          navigation.navigate('UserProfileView');
                       },
                   )}
                   <Text
@@ -66,13 +64,13 @@ export default function More({navigation}: any) {
                       }}>
                       Khác
                   </Text>
-                  {renderRowItem(
-                      require('../../Assets/Images/info.png'),
-                      'Scan Image',
-                      () => {
-                          navigation.navigate('ScanImage');
-                      },
-                  )}
+                  {/*{renderRowItem(*/}
+                  {/*    require('../../Assets/Images/info.png'),*/}
+                  {/*    'Scan Image',*/}
+                  {/*    () => {*/}
+                  {/*        navigation.navigate('ScanImage');*/}
+                  {/*    },*/}
+                  {/*)}*/}
                   {renderRowItem(
                       require('../../Assets/Images/policy.png'),
                       'Dictionary',

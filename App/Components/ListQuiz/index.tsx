@@ -1,20 +1,29 @@
-import { Dimensions, Image, StyleSheet, Text, View } from "react-native";
-import { Colors } from "react-native-ui-lib";
+import { Dimensions, Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import React, { useState } from "react";
 
 interface props {
-  state: { question: string; options: string[]; answer: string };
+  state: {
+    question: string; options: string[]; answer: string;
+  };
+  setScore: React.Dispatch<React.SetStateAction<number>>;
+  onAnswer: () => void;
 }
 
 export default function(props: props) {
+  const handlePress = (item: string, answer: string) => {
+    if(item === answer) {
+      props.setScore(prevScore => prevScore + 1)
+    }
+    props.onAnswer();
+  };
   return (
     <View style={styles.container}>
       <View style={{
         margin: 20,
         borderWidth: 5,
-        height: Dimensions.get("window").height * 0.75,
+        height: Dimensions.get("window").height * 0.6,
         borderRadius: 20,
         borderColor: "#a4846d",
-        backgroundColor: "#f6ecdc",
         justifyContent: "center"
       }}>
         <View style={{ flexDirection: "row", marginTop: 0, alignSelf: "center" }}>
@@ -23,14 +32,24 @@ export default function(props: props) {
         </View>
         <View>
           {props.state.options.map(item => (
-            <View style={{width: Dimensions.get('window').width*0.7,backgroundColor:'white',height: 40,alignSelf:'center',marginTop:20,borderRadius:10,
-              justifyContent: "center"}}>
-              <Text style={{fontSize:20,marginLeft:20}}>{item}</Text>
-            </View>)
+            <TouchableOpacity style={{
+              width: Dimensions.get("window").width * 0.7,
+              backgroundColor: "white",
+              height: 40,
+              alignSelf: "center",
+              marginTop: 20,
+              borderRadius: 10,
+              justifyContent: "center"
+            }}
+                              onPress={() => {
+                                handlePress(item, props.state.answer);
+                              }}
+            >
+              <Text style={{ fontSize: 20, marginLeft: 20, color:'#2a4d69' }}>{item}</Text>
+            </TouchableOpacity>)
           )}
         </View>
-        {/*<Text style={styles.textKanji}>{props.state?.Kanji}</Text>*/}
-        {/*<Text style={styles.textMeaning}>{props.state?.Meaning}</Text>*/}
+
       </View>
     </View>
   );
@@ -38,29 +57,29 @@ export default function(props: props) {
 const styles = StyleSheet.create({
   container: {
     width: Dimensions.get("window").width,
-    height: Dimensions.get("window").height * 0.8,
+    height: Dimensions.get("window").height * 0.6,
     alignSelf: "center",
     // padding :10,
     paddingBottom: 5,
-    paddingTop: 5,
+    paddingTop: 0,
     justifyContent: "center"
 
   },
   textKanji: {
-    color: "#a4846d",
+    color: "#2a4d69",
     fontSize: 90,
     alignSelf: "center",
     marginTop: 80,
     fontWeight: "bold"
   },
   textMeaning: {
-    color: "#a4846d",
+    color: "#2a4d69",
     fontSize: 20,
     alignSelf: "center",
     marginTop: 80
   },
   textHira: {
-    color: "#a4846d",
+    color: "#2a4d69",
     fontSize: 30
   }
 });

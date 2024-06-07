@@ -1,52 +1,96 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 import { SafeAreaView } from "react-native-safe-area-context";
 import {
   Dimensions,
-  FlatList,
+  FlatList, Image,
   StyleSheet, Text, TouchableOpacity, View
-
 } from "react-native";
-import HeaderChat from "Components/Commons/HeaderChat";
 import { Colors } from "react-native-ui-lib";
-import Mock from "Utils/Mock";
 import ListQuiz from "Components/ListQuiz";
 import { useRoute } from "@react-navigation/native";
-import RenderListTuVung from "Components/RenderListTuVung";
 
+interface props {
+  state: {
+    question: string; options: string[]; answer: string;
+  };
+  setScore: React.Dispatch<React.SetStateAction<number>>;
+}
 
 export default function FlashCardTest({ navigation }: any) {
   const route = useRoute();
-
+  const [score, setScore] = useState(0);
+  const flatListRef = useRef<FlatList<props>>(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   // @ts-ignore
-  const { data } = route.params;
+  const { data, cate, level, page } = route.params;
+  const convertCate = (category: string) => {
+    if (category === "Vocabulary")
+      return "Từ vựng";
+    else if (category === "Grammar")
+      return "Ngữ pháp";
+  };
+
+  const handleAnswer = () => {
+    const nextIndex = currentIndex + 1;
+    if (nextIndex < data.length) {
+      setCurrentIndex(nextIndex);
+      flatListRef.current?.scrollToIndex({ index: nextIndex });
+    }
+  };
   return (
     <SafeAreaView style={styles.container}>
-      <HeaderChat navigation={navigation} screenBack={"TabNavigation"} />
-      {/*<TouchableOpacity onPress={() => {*/}
-      {/*  createQuiz(Voca_N3_1, 10);*/}
-      {/*}}>*/}
-      {/*  <Text>Bắt đầu</Text>*/}
-      {/*</TouchableOpacity>*/}
-      {/*<View>*/}
-      {/*  {*/}
-      {/*    data?.map((item: { question: any; options: any; answer: any; }, index: React.Key | null | undefined) => (*/}
-      {/*      <ListQuiz key={index}*/}
-      {/*                state={{ question: item.question, options: item.options, answer: item.answer }}></ListQuiz>*/}
-      {/*    ))*/}
-      {/*  }*/}
-      {/*</View>*/}
+      <View style={{
+        backgroundColor: "#2a4d69",
+        paddingBottom: 20,
+        flexDirection: "row",
+        position: "relative"
+      }}>
 
+        <Text style={{
+          fontSize: 20,
+          marginLeft: 20,
+          color: "white",
+          fontWeight: "bold",
+          textAlign: "center",
+          flex: 1
+        }}>
+          {convertCate(cate)}
+        </Text>
+        <TouchableOpacity
+          style={{ position: "absolute", marginLeft: 5, marginTop: 2 }}
+          onPress={() => {
+            navigation.goBack();
+          }}>
+          <Image
+            style={{ height: 20, width: 20 }}
+            source={require("../../Assets/Images/left-chevron.png")}
+          />
+        </TouchableOpacity>
+
+      </View>
+      <View style={{ marginTop: 20 }}>
+        <Text style={styles.textTittle}>Level {level} Bài {page} </Text>
+      </View>
+      <View style={{ marginTop: 20, flexDirection: "row", justifyContent: "center" }}>
+        <Text style={styles.textTittle}>Điểm: {score} /10</Text>
+        <Image
+          style={{ height: 40, width: 40, marginLeft: 5, marginTop: -5 }}
+          source={require("../../Assets/Images/achievement.png")}
+        />
+      </View>
       <FlatList
         data={data}
-        renderItem={({ item }) => <ListQuiz state={item} />}
-        keyExtractor={item => item.Kanji}
+        renderItem={({ item }) => <ListQuiz onAnswer={handleAnswer} setScore={setScore} state={item} />}
+        keyExtractor={(item, index) => item.Meaning}
         horizontal
-        snapToInterval={Dimensions.get("window").width} // Đặt khoảng cách giữa các điểm dừng bằng chiều rộng màn hình
-        snapToAlignment="center" // Căn giữa các thẻ khi dừng lại
-        decelerationRate="fast" // Tăng tốc độ dừng lại của thẻ
-        showsHorizontalScrollIndicator={false} // Ẩn thanh cuộn ngang
+        snapToInterval={Dimensions.get("window").width}
+        snapToAlignment="center"
+        decelerationRate="fast"
+        showsHorizontalScrollIndicator={false}
+        scrollEnabled={false}
+        onContentSizeChange={() => flatListRef.current?.scrollToIndex({ index: currentIndex })}
       />
     </SafeAreaView>
   );

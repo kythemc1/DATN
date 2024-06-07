@@ -3,25 +3,27 @@ import React, { useEffect, useState } from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import {
   Dimensions,
-  FlatList,
-  ScrollView,
+  FlatList, Image,
   StyleSheet, Text, TouchableOpacity, View
 
 } from "react-native";
-import HeaderChat from "Components/Commons/HeaderChat";
 import { useRoute } from "@react-navigation/native";
 import { Colors } from "react-native-ui-lib";
-import Mock from "Utils/Mock";
 import RenderListTuVung from "Components/RenderListTuVung";
 import { API } from "Configs/Constants/API";
 import axios from "axios";
-import Swiper from "react-native-swiper";
 
 export default function GrammarDetails({ navigation }: any) {
-  const Voca_N3_1 = Mock.VocaN3_1;
   const route = useRoute();
   const [lists, setLists] = useState([]);
   const [isQuizStarted, setIsQuizStarted] = useState(false);
+
+  const convertCate = (category: string) => {
+    if (category === "Vocabulary")
+      return "Từ vựng";
+    else if (category === "Grammar")
+      return "Ngữ pháp";
+  };
 
   let api: string;
   // @ts-ignore
@@ -29,7 +31,7 @@ export default function GrammarDetails({ navigation }: any) {
   if (cate == "Grammar") {
     switch (level) {
       case "N1":
-        api = API.API_GET_GRAMMAR_N1;
+        api = API.API_GET_VOCABULARY_N1;
         break;
       case "N2":
         api = API.API_GET_GRAMMAR_N2;
@@ -73,23 +75,23 @@ export default function GrammarDetails({ navigation }: any) {
       if (usedIndices.has(questionIndex)) continue;
 
       const questionItem = data[questionIndex];
-      const { Kanji, Meaning } = questionItem;
+      const { word, means } = questionItem;
       usedIndices.add(questionIndex);
 
       const options = new Set<string>();
-      options.add(Meaning);
+      options.add(means);
 
       while (options.size < 4) {
         const optionIndex = getRandomInt(data.length);
-        options.add(data[optionIndex].Meaning);
+        options.add(data[optionIndex].means);
       }
 
       const shuffledOptions = Array.from(options).sort(() => Math.random() - 0.5);
 
       questions.push({
-        question: `Nghĩa của từ '${Kanji}' là gì?`,
+        question: `Nghĩa của từ '${word}' là gì?`,
         options: shuffledOptions,
-        answer: Meaning
+        answer: means
       });
 
 
@@ -98,56 +100,74 @@ export default function GrammarDetails({ navigation }: any) {
     console.log("question", questions);
   };
   const questions: { question: string; options: string[]; answer: string }[] = [];
-// const  [listQuestion,setListQuestion]= useState(questions[])
 
   const getRandomInt = (max: number) => {
     return Math.floor(Math.random() * max);
   };
   type Vocabulary = {
-    Kanji: string;
-    Hiragana: string;
-    Meaning: string;
+    word: string;
+    hiragana: string;
+    means: string;
   };
 
   useEffect(() => {
-    axios.get(api)
+    axios.get(`${api}${name}`)
       .then(response => {
         if (response.data != null) {
           setLists(response.data);
           console.log(response.data);
+          console.log(`${api}${name}`, "`${api}${name}`");
         }
       })
       .catch(error => {
-        console.error("Error fetching data: ", error);
+        console.error("Error fetching data: 12333", error);
       });
   }, []);
   return (
     <SafeAreaView style={styles.container}>
-      <HeaderChat navigation={navigation} screenBack={"TabNavigation"} />
-      <View>
+      <View style={{
+        backgroundColor: "#2a4d69",
+        paddingBottom: 20,
+        flexDirection: "row",
+        position: "relative"
+      }}>
+
+        <Text style={{
+          fontSize: 20,
+          marginLeft: 20,
+          color: "white",
+          fontWeight: "bold",
+          textAlign: "center",
+          flex: 1
+        }}>
+          {convertCate(cate)}
+        </Text>
+        <TouchableOpacity
+          style={{ position: "absolute", marginLeft: 5, marginTop: 2 }}
+          onPress={() => {
+            navigation.goBack();
+          }}>
+          <Image
+            style={{ height: 20, width: 20 }}
+            source={require("../../Assets/Images/left-chevron.png")}
+          />
+        </TouchableOpacity>
+      </View>
+      <View style={{ marginTop: 20 }}>
         <View>
-          <View>
-            <Text style={styles.textTittle}>Bài 1</Text>
-          </View>
+          <Text style={styles.textTittle}>Level {level} Bài {page} </Text>
         </View>
         <View>
           <FlatList
-            data={Voca_N3_1}
+            data={lists}
             renderItem={({ item }) => <RenderListTuVung state={item} />}
-            keyExtractor={item => item.Kanji}
+            keyExtractor={item => item}
             horizontal
-            snapToInterval={Dimensions.get("window").width} // Đặt khoảng cách giữa các điểm dừng bằng chiều rộng màn hình
-            snapToAlignment="center" // Căn giữa các thẻ khi dừng lại
-            decelerationRate="fast" // Tăng tốc độ dừng lại của thẻ
-            showsHorizontalScrollIndicator={false} // Ẩn thanh cuộn ngang
+            snapToInterval={Dimensions.get("window").width}
+            snapToAlignment="center"
+            decelerationRate="fast"
+            // showsHorizontalScrollIndicator={false}
           />
-          {/* {lists.map(({example, grammar, means}, index)=>(
-                        <RenderListTuVung state={{
-                            Kanji: example,
-                                Hiragana: grammar,
-                            Meaning: means
-                        }} key={index}></RenderListTuVung>
-                    ))} */}
         </View>
       </View>
       <TouchableOpacity style={{
@@ -159,8 +179,13 @@ export default function GrammarDetails({ navigation }: any) {
         alignSelf: "center"
       }}
                         onPress={() => {
-                          createQuiz(Voca_N3_1, 10),
-                            navigation.navigate("FlashCardTest", { data: questions });
+                          createQuiz(lists, 10);
+                          navigation.navigate("FlashCardTest", {
+                            data: questions,
+                            cate: cate,
+                            level: level,
+                            page: page
+                          });
                         }}>
         <Text style={{ color: "white", textAlign: "center" }}>Luyện tập</Text>
       </TouchableOpacity>
@@ -179,7 +204,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold"
   },
   item: {
-    backgroundColor: "#f9c2ff",
+    // backgroundColor: "#f9c2ff",
     padding: 20,
     marginVertical: 8,
     marginHorizontal: 16

@@ -18,7 +18,7 @@ interface props {
 export default function ComponentPressToListen(props: props) {
     return (
       <View style={styles.container}>
-          <View>
+          <View style={{justifyContent:'center'}}>
               <Image style={{ height: 40, width: 40, marginLeft: 15 }}
                      source={require("../../Assets/Images/radio.png")}></Image>
           </View>
@@ -56,7 +56,8 @@ const styles = StyleSheet.create({
         marginTop: 10,
         flexDirection: "row",
         backgroundColor: "white",
-        padding: 2
+        padding: 2,
+        height: 80
     },
     textTittle: {
         color: Colors.text,

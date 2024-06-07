@@ -1,17 +1,59 @@
 import {View} from "react-native-ui-lib";
 import ComponentOnpressShowList from "Components/ComponentOnpressShowList";
 import {TabComponentVocabularyN1} from "Components/TabComponentVoca/indexN1";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import { API } from "Configs/Constants/API";
+import { ScrollView } from "react-native";
 
 export const TabComponentVocabularyN4=({navigation} : any)=>{
 
-    return(
-        <View>
-            <ComponentOnpressShowList name={"Mimikara gramamr N1 page 1"} navigation={navigation} page={1} cate={"Grammar"} level={"N4"} pressToScreen={'GrammarDetails'}></ComponentOnpressShowList>
-            <ComponentOnpressShowList name={"Mimikara gramamr N1 page 2"} navigation={navigation} page={2} cate={"Grammar"} level={"N4"} pressToScreen={'GrammarDetails'}></ComponentOnpressShowList>
-            <ComponentOnpressShowList name={"Mimikara gramamr N1 page 3"} navigation={navigation} page={3} cate={"Grammar"} level={"N4"} pressToScreen={'GrammarDetails'}></ComponentOnpressShowList>
-            <ComponentOnpressShowList name={"Mimikara gramamr N1 page 4"} navigation={navigation} page={4} cate={"Grammar"} level={"N4"} pressToScreen={'GrammarDetails'}></ComponentOnpressShowList>
-            <ComponentOnpressShowList name={"Mimikara gramamr N1 page 5"} navigation={navigation} page={5} cate={"Grammar"} level={"N4"} pressToScreen={'GrammarDetails'}></ComponentOnpressShowList>
-            <ComponentOnpressShowList name={"Mimikara gramamr N1 page 6"} navigation={navigation} page={6} cate={"Grammar"} level={"N4"} pressToScreen={'GrammarDetails'}></ComponentOnpressShowList>
-        </View>
-    )
-}
+  const [lists, setLists] = useState([]);
+  const [countPage, setCountPage] = useState(1);
+
+  useEffect(() => {
+    getList();
+
+  }, []);
+
+  const getList = async () => {
+    axios.get(`${API.API_GET_COUNT_VOCABULARY_BY_LEVEL}N4`)
+      .then(response => {
+        if (response.data != null) {
+          console.log(response.data, "N1");
+
+          const arr = [];
+          for (let i = 1; i <= calculateTotalPages(response.data); ++i) {
+            arr.push({ name: i, page: i });
+          }
+
+          // @ts-ignore
+          setLists(arr);
+        }
+
+      })
+      .catch(error => {
+        console.error("Error fetching data: ", error);
+      });
+  };
+
+  const calculateTotalPages = (totalItems: number) => {
+    let x = Math.ceil(totalItems / 30);
+    setCountPage(x);
+    return x;
+  };
+
+
+  return (
+    <View style={{ flex: 1 }}>
+      <ScrollView>
+        {
+          lists.map(({ name, page }, index) => (
+            <ComponentOnpressShowList key={index} name={name} navigation={navigation} page={page} cate={"Vocabulary"}
+                                      level={"N4"} pressToScreen={"GrammarDetails"}></ComponentOnpressShowList>))
+        }
+
+      </ScrollView>
+    </View>
+  );
+};

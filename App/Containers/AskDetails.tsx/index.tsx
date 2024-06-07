@@ -19,7 +19,7 @@ export default function AskDetails({navigation} : any) {
     setMessages([
       {
         _id: 1,
-        text: 'Này Nhóc :33',
+        text: 'Chào bạn',
         createdAt: new Date(),
         user: {
           _id: 2,
@@ -46,14 +46,18 @@ export default function AskDetails({navigation} : any) {
         Authorization: `Bearer ${YOUR_API_KEY}`,
       },
       body: JSON.stringify({
-        model: 'text-davinci-003',
-        prompt: value,
-        max_tokens: MAX_TOKENS,
-        temperature: 0,
+        model: "gpt-3.5-turbo-16k",
+        messages: value,
+        temperature: 1,
+        max_tokens: 256,
+        top_p: 1,
+        frequency_penalty: 0,
+        presence_penalty: 0,
       }),
     });
     const data = await res.json();
     if (data) {
+      console.log(data,'dataaaaaaa');
       const value = data?.choices[0]?.text;
       addNewMessage(value);
     }

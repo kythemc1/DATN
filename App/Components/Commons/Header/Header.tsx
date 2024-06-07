@@ -1,4 +1,3 @@
-import SideMenu from 'Components/SideMenu';
 import React ,{useState} from 'react';
 import {Dimensions, StyleSheet, TouchableOpacity} from 'react-native';
 import {View, Text, Image} from 'react-native';
@@ -18,14 +17,6 @@ const Header = (props:props) => {
           <Text style={styles.textHello}>Xin chào bạn,</Text>
           <Text style={styles.textWelcome}>Chúc bạn một ngày tốt lành !</Text>
         </View>
-        <TouchableOpacity style={styles.showModal} onPress={()=>setShowmodal(true)}>
-            <SideMenu navigation={props.navigation} visible={showModal} onDismis={() => setShowmodal(false)}/>
-            <Image
-           source={require('../../../Assets/Images/3.jpg')}
-            style={styles.avatar}
-            />
-        </TouchableOpacity>
-
       </View>
     </View>
   );

@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import {
-    StyleSheet, Text, View
+    Image,
+    ScrollView,
+    StyleSheet, Text, TouchableOpacity, View
 } from "react-native";
 import {SafeAreaView} from 'react-native-safe-area-context';
 import HeaderChat from "Components/Commons/HeaderChat";
@@ -8,10 +10,14 @@ import {useRoute} from "@react-navigation/native";
 import {API} from "Configs/Constants/API";
 import axios from "axios";
 import ComponentPressToListen from "Components/ComponentPressToListen";
+import CommonPagination from "Components/Commons/CommonPagition";
 
 export default function ListenListVideo({navigation}: { navigation: any }) {
     const route = useRoute();
     const [lists, setLists] = useState([]);
+    const [currentPage,setCurrentPage] =useState(1)
+    const [recordPerPage,setRecordPerPage]= useState(10)
+    const [countPage,setCountPage] = useState(1)
     let api: string;
     //@ts-ignore
     const {level} = route.params;
@@ -23,43 +29,85 @@ export default function ListenListVideo({navigation}: { navigation: any }) {
         case 'N5': api = API.API_GET_LISTEN_N5;break;
     }
     useEffect(() => {
-    axios.get(api)
-        .then(response => {
-            if(response.data!=null){
-                setLists(response.data);
-                console.log(response.data)
-            }
-        })
-        .catch(error => {
-            console.error('Error fetching data: ', error);
-        });
-}, []);
+        getList();
+    }, []);
+
+
+    const getList = async ()=>{
+        axios.get( `${api}${currentPage}`)
+          .then(response => {
+              if(response.data!=null){
+                  console.log(response.data.listResult)
+                  setLists(response.data.listResult);
+                  calculateTotalPages(response.data.totalRecord)
+              }
+
+          })
+          .catch(error => {
+              console.error('Error fetching data: ', error);
+          });
+    }
+
+    const calculateTotalPages = (totalItems: number) => {
+        let x= Math.ceil(totalItems / 10);
+        setCountPage(x)
+    };
+
+    const setInfoPage = (page: number)=>{
+        setCurrentPage(page)
+        setRecordPerPage(10)}
+
+    const handleChangePage=async (page: number, itemsPerPage: number)=>{
+        setInfoPage(page)
+        await getList()
+    }
 
     return (
         <SafeAreaView style={styles.container}>
-            <View style={{ backgroundColor: "#2a4d69" }}>
+            <View style={{
+                backgroundColor: "white",
+                paddingBottom: 20,
+                flexDirection: "row",
+                position: "relative",
+            }}>
                 <Text style={{
                     fontSize: 20,
-                    color: "white",
+                    marginLeft: 20,
+                    color: "#2a4d69",
+                    fontWeight: "bold",
                     textAlign: "center",
-                    marginTop: 20,
-                    marginBottom: 10,
-                    fontWeight: "bold"
+                    flex: 1,
+                    marginTop: 10
                 }}>
-                    {level} Nghe hiểu
+                    Cài đặt người dùng
                 </Text>
+                <TouchableOpacity
+                  style={{ position: "absolute", marginLeft: 5, marginTop: 10 }}
+                  onPress={() => {
+                      navigation.goBack();
+                  }}>
+                    <Image
+                      style={{ height: 20, width: 20 , marginLeft : 5}}
+                      source={require("../../Assets/Images/icons-back2.png")}
+                    />
+                </TouchableOpacity>
             </View>
-            {
-                lists.map(({listenId, url}, index)=>(
-                    <ComponentPressToListen key={index} name={'Listen'} navigation={navigation} id={listenId} level={level} url={url} pressToScreen={'ListenDetails'}/>
-                ))
-            }
+            <ScrollView>
+                {
+                    lists.map(({listenId, url}, index)=>(
+                      <ComponentPressToListen key={index} name={'Listen'} navigation={navigation} id={listenId} level={level} url={url} pressToScreen={'ListenDetails'}/>
+                    ))
+                }
+            </ScrollView>
+            <View style={{justifyContent:'flex-end'}}>
+                <CommonPagination currentPage={currentPage} itemsPerPage={recordPerPage} onPageChange={handleChangePage} totalPages={countPage}/>
+            </View>
         </SafeAreaView>
     );
 }
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: '#2a4d69',
+
         flex: 1,
     }
 });
