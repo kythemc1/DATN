@@ -1,31 +1,22 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 
 import { SafeAreaView } from "react-native-safe-area-context";
 import {
-  Dimensions,
-  FlatList, Image,
+  Dimensions, FlatList,
+  Image, ScrollView,
   StyleSheet, Text, TouchableOpacity, View
 } from "react-native";
 import { Colors } from "react-native-ui-lib";
-import ListQuiz from "Components/ListQuiz";
 import { useRoute } from "@react-navigation/native";
+import RenderResult from "Components/RenderResult";
+import ListQuiz from "Components/ListQuiz";
 
-interface props {
-  state: {
-    question: string; options: string[]; answer: string;
-  };
-  setScore: React.Dispatch<React.SetStateAction<number>>;
-}
 
-export default function FlashCardTest({ navigation }: any) {
+export default function Result({ navigation }: any) {
   const route = useRoute();
-  const [score, setScore] = useState(0);
-  const flatListRef = useRef<FlatList<props>>(null);
-  const [currentIndex, setCurrentIndex] = useState(0);
 
-  const [showScore,setShowScore] = useState(false);
   // @ts-ignore
-  const { data, cate, level, page } = route.params;
+  const { score, cate, level, page,data } = route.params;
   const convertCate = (category: string) => {
     if (category === "Vocabulary")
       return "Từ vựng";
@@ -33,13 +24,7 @@ export default function FlashCardTest({ navigation }: any) {
       return "Ngữ pháp";
   };
 
-  const handleAnswer = () => {
-    const nextIndex = currentIndex + 1;
-    if (nextIndex < data.length) {
-      setCurrentIndex(nextIndex);
-      flatListRef.current?.scrollToIndex({ index: nextIndex });
-    }
-  };
+
   return (
     <SafeAreaView style={styles.container}>
       <View style={{
@@ -71,46 +56,35 @@ export default function FlashCardTest({ navigation }: any) {
         </TouchableOpacity>
 
       </View>
+      <Image
+        style={{ height: 180, width: Dimensions.get('window').width }}
+        source={require("../../Assets/Images/result.jpg")}
+      />
       <View style={{ marginTop: 20 }}>
         <Text style={styles.textTittle}>Level {level} Bài {page} </Text>
       </View>
+      <View style={{ marginTop: 20, flexDirection: "row", justifyContent: "center" }}>
+        <Text style={styles.textTittle}>Điểm: {score} /10</Text>
+        <Image
+          style={{ height: 40, width: 40, marginLeft: 5, marginTop: -5 }}
+          source={require("../../Assets/Images/achievement.png")}
+        />
+      </View>
       <FlatList
         data={data}
-        renderItem={({ item }) => <ListQuiz onAnswer={handleAnswer} setScore={setScore} state={item} />}
+        renderItem={({ item }) => <RenderResult state={item} />}
         keyExtractor={(item, index) => item.key}
-        horizontal
         snapToInterval={Dimensions.get("window").width}
-        snapToAlignment="center"
         decelerationRate="fast"
-        showsHorizontalScrollIndicator={false}
-        onContentSizeChange={() => flatListRef.current?.scrollToIndex({ index: currentIndex })}
       />
-      <TouchableOpacity style={{
-        height: 40,
-        width: 120,
-        backgroundColor: "#2a4d69",
-        borderRadius: 10,
-        justifyContent: "center",
-        alignSelf: "center",
-        marginBottom : 40
-      }}
-                        onPress={() => {
-                          navigation.navigate("Result", {
-                            data: data,
-                            cate: cate,
-                            level: level,
-                            page: page,
-                            score : score
-                          });
-                        }}>
-        <Text style={{ color: "white", textAlign: "center" }}>Hoàn thành</Text>
-      </TouchableOpacity>
+
+
     </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: "white" },
+  container: { flex: 1, backgroundColor: "white",  },
   textTittle: {
     color: Colors.text,
     fontFamily: "Poppins-Regular",

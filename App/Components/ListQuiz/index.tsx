@@ -10,12 +10,16 @@ interface props {
 }
 
 export default function(props: props) {
+  const [isChoose, setIsChoose] = useState(false);
   const handlePress = (item: string, answer: string) => {
-    if(item === answer) {
-      props.setScore(prevScore => prevScore + 1)
+    setSelectedOption(item);
+    if (item === answer) {
+      props.setScore(prevScore => prevScore + 1);
     }
     props.onAnswer();
   };
+  const [selectedOption, setSelectedOption] = useState("");
+
   return (
     <View style={styles.container}>
       <View style={{
@@ -23,7 +27,7 @@ export default function(props: props) {
         borderWidth: 5,
         height: Dimensions.get("window").height * 0.6,
         borderRadius: 20,
-        borderColor: "#a4846d",
+        borderColor: "#2a4d69",
         justifyContent: "center"
       }}>
         <View style={{ flexDirection: "row", marginTop: 0, alignSelf: "center" }}>
@@ -32,20 +36,23 @@ export default function(props: props) {
         </View>
         <View>
           {props.state.options.map(item => (
-            <TouchableOpacity style={{
-              width: Dimensions.get("window").width * 0.7,
-              backgroundColor: "white",
-              height: 40,
-              alignSelf: "center",
-              marginTop: 20,
-              borderRadius: 10,
-              justifyContent: "center"
-            }}
+            <TouchableOpacity style={[
+              styles.option,
+              {
+                backgroundColor: selectedOption === item ? "#2a4d69" : "white",
+                borderColor: selectedOption === item ? "white" : "#2a4d69"
+              }
+            ]}
                               onPress={() => {
                                 handlePress(item, props.state.answer);
                               }}
             >
-              <Text style={{ fontSize: 20, marginLeft: 20, color:'#2a4d69' }}>{item}</Text>
+              <Text style={[
+                styles.optionText,
+                { color: selectedOption === item ? "white" : "#2a4d69" }
+              ]}>
+                {item}
+              </Text>
             </TouchableOpacity>)
           )}
         </View>
@@ -81,5 +88,18 @@ const styles = StyleSheet.create({
   textHira: {
     color: "#2a4d69",
     fontSize: 30
+  },
+  option: {
+    width: Dimensions.get("window").width * 0.7,
+    height: 40,
+    alignSelf: "center",
+    marginTop: 20,
+    borderRadius: 10,
+    justifyContent: "center",
+    borderWidth: 1
+  },
+  optionText: {
+    fontSize: 20,
+    marginLeft: 20
   }
 });

@@ -27,6 +27,7 @@ import ListenListVideo from "Containers/ListenListVideo";
 import More from "Containers/More";
 import UserProfileView from "Containers/UserSetting";
 import FlashCardTest from "Containers/FlashCardTest";
+import Result from "Containers/Result";
 export default function AppNavigation() {
   useLang();
   const navigationRef = useRef<any | null>(null);
@@ -77,7 +78,7 @@ export default function AppNavigation() {
           <Stack.Screen name="ListenListVideo" component={ListenListVideo} />
           <Stack.Screen name="UserProfileView" component={UserProfileView} />
           <Stack.Screen name="FlashCardTest" component={FlashCardTest} />
-
+          <Stack.Screen name="Result" component={Result} />
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaView>
