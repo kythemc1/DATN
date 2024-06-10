@@ -5,117 +5,118 @@ import {
   Image,
   KeyboardAvoidingView,
   StyleSheet,
-  TextInput,
-} from 'react-native';
-import {useAuth} from '../../Hooks/API/Auth';
-import {useTranslation} from 'react-i18next';
-import ReactNativeBiometrics, {BiometryTypes} from 'react-native-biometrics';
+  TextInput
+} from "react-native";
+import { useAuth } from "Hooks/API/Auth";
+import { useTranslation } from "react-i18next";
+import ReactNativeBiometrics, { BiometryTypes } from "react-native-biometrics";
+import { useSelector } from "react-redux";
+import { RootState } from "Store/reduxProvider";
 
-export default function SignIn({navigation}: any) {
-  const {t} = useTranslation();
-  const {onSetAccount, account, login} = useAuth();
-  const [typeTouchId,setTypeTouchID]=useState('');
+export default function SignIn({ navigation }: any) {
+  const { t } = useTranslation();
+  const loginFalse = useSelector((state: RootState) => state.auth.noti?.loginFalse);
+  const username = useSelector((state: RootState) => state.auth.user?.username);
+
+  const { onSetAccount, account, login } = useAuth();
+  const [typeTouchId, setTypeTouchID] = useState("");
   useEffect(() => {
-    BioSupported();
+    if(username){
+      BioSupported();
+    }
   }, []);
   const BioSupported = async () => {
     const rnBiometrics =
-      Platform.OS == 'ios'
-        ? new ReactNativeBiometrics({allowDeviceCredentials: true})
+      Platform.OS == "ios"
+        ? new ReactNativeBiometrics({ allowDeviceCredentials: true })
         : new ReactNativeBiometrics();
 
     await rnBiometrics.isSensorAvailable().then(resultObject => {
-      const {available, biometryType} = resultObject;
+      const { available, biometryType } = resultObject;
       switch (available && biometryType) {
         case BiometryTypes.TouchID:
-          setTypeTouchID('TouchID');
+          setTypeTouchID("TouchID");
           break;
         case BiometryTypes.FaceID:
-          setTypeTouchID('FaceID');
+          setTypeTouchID("FaceID");
           break;
         case BiometryTypes.Biometrics:
-          setTypeTouchID('Biometrics');
+          setTypeTouchID("Biometrics");
           break;
         default:
-          setTypeTouchID('');
+          setTypeTouchID("");
           break;
       }
     });
   };
 
   const handleBiometric = async () => {
-    if (typeTouchId == 'FaceID' || typeTouchId == 'TouchID' || typeTouchId == 'Biometrics'){
+    if (typeTouchId == "FaceID" || typeTouchId == "TouchID" || typeTouchId == "Biometrics") {
       const rnBiometrics =
-        Platform.OS == 'ios'
-          ? new ReactNativeBiometrics({allowDeviceCredentials: true})
+        Platform.OS == "ios"
+          ? new ReactNativeBiometrics({ allowDeviceCredentials: true })
           : new ReactNativeBiometrics();
       let epochTimeSeconds = Math.round(new Date().getTime() / 1000).toString();
-      let payload = epochTimeSeconds + 'some message';
+      let payload = epochTimeSeconds + "some message";
       rnBiometrics.biometricKeysExist().then(async resultObject => {
-        const {keysExist} = resultObject;
+        const { keysExist } = resultObject;
         if (keysExist) {
           rnBiometrics
             .createSignature({
-              promptMessage: `${t('Signinbio.touch')}`,
-              payload: payload,
+              promptMessage: `${t("Signinbio.touch")}`,
+              payload: payload
             })
             .then(async resultObject => {
-              const {success, signature} = resultObject;
+              const { success, signature } = resultObject;
               if (success) {
-                // console.log('CreateSignature ', signature);
-                // if (pinCode === pin) {
-                navigation.navigate('TabNavigation');
-                // }
+                navigation.navigate("TabNavigation");
               }
             })
             .catch();
         } else {
           // console.log('Keys do not exist or were deleted');
           await rnBiometrics.createKeys().then(resultObject => {
-            const {publicKey} = resultObject;
+            const { publicKey } = resultObject;
           });
           rnBiometrics
             .createSignature({
-              promptMessage: `${t('Signinbio.touch')}`,
-              payload: payload,
+              promptMessage: `${t("Signinbio.touch")}`,
+              payload: payload
             })
             .then(async resultObject => {
-              const {success, signature} = resultObject;
+              const { success, signature } = resultObject;
               if (success) {
-                // console.log('CreateSignature1 ', signature);
-                navigation.navigate('TabNavigation');
+                navigation.navigate("TabNavigation");
               }
             })
             .catch();
         }
       });
-    }
-    else if(typeTouchId == '')
-    {
-      Alert.alert('Không Hỗ Trợ')
+    } else if (typeTouchId == "") {
+      Alert.alert("Không Hỗ Trợ");
     }
   };
   return (
     <View
       onTouchMove={Keyboard.dismiss}
-      style={{flex: 1, backgroundColor: 'white'}}>
+      style={{ flex: 1, backgroundColor: "white" }}>
       <KeyboardAvoidingView>
         <View>
           <View>
             <Image
               style={{
-                alignSelf: 'center',
+                alignSelf: "center",
                 height: 100,
                 width: 200,
-                marginTop: 50,
+                marginTop: 50
               }}
-              source={require('../../Assets/Images/13610-logos_black.png')}
+              source={require("../../Assets/Images/13610-logos_black.png")}
             />
             <Text
               style={{
-                textAlign: 'center',
-                color: 'black',
-                fontFamily: 'Poppins-Italic',
+                textAlign: "center",
+                color: "black",
+                fontFamily: "Poppins-Italic"
               }}>
               Nhật Ngữ 13610
             </Text>
@@ -125,36 +126,36 @@ export default function SignIn({navigation}: any) {
               style={{
                 fontSize: 30,
                 marginTop: 50,
-                marginLeft: Dimensions.get('window').width * 0.05,
-                color: 'rgba(20, 57, 128, 1)',
-                fontFamily: 'Poppins-SemiBold',
+                marginLeft: Dimensions.get("window").width * 0.05,
+                color: "rgba(20, 57, 128, 1)",
+                fontFamily: "Poppins-SemiBold"
               }}>
-              {t('sign_in.sign_in')}
+              Đăng nhập
             </Text>
             <View>
               <Text
                 style={{
                   marginTop: 15,
                   fontSize: 18,
-                  marginLeft: Dimensions.get('window').width * 0.05,
-                  color: 'rgba(20, 57, 128, 1)',
-                  fontFamily: 'Poppins-SemiBold',
+                  marginLeft: Dimensions.get("window").width * 0.05,
+                  color: "rgba(20, 57, 128, 1)",
+                  fontFamily: "Poppins-SemiBold"
                 }}>
-                {t('sign_in.username')}
+                Tên tài khoản
               </Text>
               <View
                 style={{
-                  position: 'relative',
-                  alignItems: 'center',
-                  marginBottom: 8,
+                  position: "relative",
+                  alignItems: "center",
+                  marginBottom: 8
                 }}>
                 <TextInput
                   value={account.username}
                   onChangeText={(username: string) =>
-                    onSetAccount('username', username)
+                    onSetAccount("username", username)
                   }
-                  placeholder={t('sign_in.username')}
-                  placeholderTextColor={'grey'}
+                  placeholder='Tên tài khoản'
+                  placeholderTextColor={"grey"}
                   style={styles.input}
                 />
               </View>
@@ -165,40 +166,42 @@ export default function SignIn({navigation}: any) {
               style={{
                 marginTop: 0,
                 fontSize: 18,
-                marginLeft: Dimensions.get('window').width * 0.05,
-                color: 'rgba(20, 57, 128, 1)',
-                fontFamily: 'Poppins-SemiBold',
+                marginLeft: Dimensions.get("window").width * 0.05,
+                color: "rgba(20, 57, 128, 1)",
+                fontFamily: "Poppins-SemiBold"
               }}>
-              {t('sign_in.password')}
+              Mật khẩu
             </Text>
             <View
               style={{
-                position: 'relative',
-                alignItems: 'center',
-                marginBottom: 8,
+                position: "relative",
+                alignItems: "center",
+                marginBottom: 8
               }}>
               <TextInput
                 value={account.password}
                 onChangeText={(password: string) =>
-                  onSetAccount('password', password)
+                  onSetAccount("password", password)
                 }
-                placeholder={t('sign_in.password')}
-                placeholderTextColor={'grey'}
+                placeholder='Mật khẩu'
+                placeholderTextColor={"grey"}
                 secureTextEntry
                 style={styles.input}
               />
             </View>
           </View>
+          {loginFalse && <Text style={styles.errorText}>Đăng nhập không thành công !</Text>}
+
           <TouchableOpacity
             style={{
               marginTop: 10,
-              width: Dimensions.get('window').width * 0.5,
+              width: Dimensions.get("window").width * 0.5,
               height: 50,
               borderWidth: 1,
-              backgroundColor: 'rgba(20, 57, 128, 1)',
-              alignSelf: 'center',
+              backgroundColor: "rgba(20, 57, 128, 1)",
+              alignSelf: "center",
               borderRadius: 20,
-              alignItems: 'center',
+              alignItems: "center"
             }}
             onPress={() => {
               login(account);
@@ -206,73 +209,80 @@ export default function SignIn({navigation}: any) {
             <Text
               style={{
                 fontSize: 15,
-                color: 'white',
+                color: "white",
                 marginTop: 9,
-                fontFamily: 'Poppins-SemiBold',
+                fontFamily: "Poppins-SemiBold"
               }}>
-              {t('sign_in.sign_in')}
+              Đăng nhập
             </Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={{
               marginTop: 10,
-              width: Dimensions.get('window').width * 0.5,
+              width: Dimensions.get("window").width * 0.5,
               height: 50,
               borderWidth: 1,
-              backgroundColor: 'rgba(20, 57, 128, 1)',
-              alignSelf: 'center',
+              backgroundColor: "rgba(20, 57, 128, 1)",
+              alignSelf: "center",
               borderRadius: 20,
-              alignItems: 'center',
+              alignItems: "center"
             }}
             onPress={() => {
-              navigation.navigate("Register")
+              navigation.navigate("Register");
             }}>
             <Text
               style={{
                 fontSize: 15,
-                color: 'white',
+                color: "white",
                 marginTop: 9,
-                fontFamily: 'Poppins-SemiBold',
+                fontFamily: "Poppins-SemiBold"
               }}>
-              Register
+              Đăng ký
             </Text>
           </TouchableOpacity>
-          
+
           <Text
             style={{
               fontSize: 15,
-              color: 'rgba(20, 57, 128, 1)',
+              color: "rgba(20, 57, 128, 1)",
               marginTop: 40,
-              alignSelf: 'center',
-              fontFamily: 'Poppins-Light',
+              alignSelf: "center",
+              fontFamily: "Poppins-Light"
             }}>
-            {t('sign_in.sign_in_bio')}
+            Đăng nhập với sinh trắc học
           </Text>
           <TouchableOpacity
-            style={{width: 40, height: 40, alignSelf: 'center', marginTop: 10}}
+            style={{ width: 40, height: 40, alignSelf: "center", marginTop: 10 }}
             onPress={() => {
-              handleBiometric();
+              if(username){
+                handleBiometric();
+              }
+              else{
+                Alert.alert('Bạn chưa đăng nhập!')
+              }
             }}>
             <Image
               style={{
                 width: 40,
                 height: 40,
-                alignSelf: 'center',
-                marginTop: 20,
+                alignSelf: "center",
+                marginTop: 20
               }}
-              source={require('../../Assets/Images/Union.png')}
+              source={require("../../Assets/Images/Union.png")}
             />
           </TouchableOpacity>
-          <TouchableOpacity onPress={()=>{navigation.navigate("ForgotPassword")}}>
+          <TouchableOpacity onPress={() => {
+            navigation.navigate("ForgotPassword");
+          }}>
             <Text
-            style={{
-              fontSize: 15,
-              color: 'rgba(20, 57, 128, 1)',
-              marginTop: 40,
-              alignSelf: 'center',
-              fontFamily: 'Poppins-Light',
-            }}>
-            forgot password
+              style={{
+                fontSize: 15,
+                color: "rgba(20, 57, 128, 1)",
+                marginTop: 40,
+                alignSelf: "center",
+                fontFamily: "Poppins-Light"
+              }}>
+            quên mật khẩu
             </Text>
           </TouchableOpacity>
         </View>
@@ -286,11 +296,16 @@ const styles = StyleSheet.create({
     fontSize: 16,
     paddingHorizontal: 16,
     height: 50,
-    backgroundColor: 'white',
-    width: Dimensions.get('window').width * 0.9,
+    backgroundColor: "white",
+    width: Dimensions.get("window").width * 0.9,
     borderRadius: 20,
     borderWidth: 1,
-    borderColor: 'rgba(20, 57, 128, 1)',
-    color: 'black',
+    borderColor: "rgba(20, 57, 128, 1)",
+    color: "black"
   },
+  errorText: {
+    color: "red",
+    marginTop: 10,
+    textAlign: "center"
+  }
 });

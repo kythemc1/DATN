@@ -1,30 +1,30 @@
-import { View, Text, TouchableOpacity, Keyboard, Platform, Alert } from "react-native";
-import React, { useEffect, useState } from "react";
+import { View, Text, TouchableOpacity, Keyboard } from "react-native";
+import React from "react";
 import {
   Dimensions,
   Image,
   KeyboardAvoidingView,
   StyleSheet,
-  TextInput,
-} from 'react-native';
-import {useTranslation} from 'react-i18next';
+  TextInput
+} from "react-native";
 import { useUser } from "Hooks/API/User";
+import { useSelector } from "react-redux";
+import { RootState } from "Store/reduxProvider";
 
-export default function ForgotPassword({navigation}: any) {
-  const {t} = useTranslation();
-  const {onSetAccountRegister, accountRegister, register} = useUser();
-
+export default function ForgotPassword({ navigation }: any) {
+  const { onSetAccountRegister, accountRegister, register } = useUser();
+  const forgotPassword = useSelector((state: RootState) => state.auth.noti?.forgotPass);
 
   return (
     <View
       onTouchMove={Keyboard.dismiss}
-      style={{flex: 1, backgroundColor: 'white'}}>
+      style={{ flex: 1, backgroundColor: "white" }}>
       <KeyboardAvoidingView>
         <View>
           <View>
             <Image
               style={styles.mLogo}
-              source={require('../../Assets/Images/13610-logos_black.png')}
+              source={require("../../Assets/Images/13610-logos_black.png")}
             />
             <Text
               style={styles.textLogo}>
@@ -33,27 +33,27 @@ export default function ForgotPassword({navigation}: any) {
           </View>
           <View>
             <Text
-              style={styles.textSigin}>
-              Forgot Passowrd
+              style={styles.textSignIn}>
+              Quên mật khẩu
             </Text>
             <View>
               <Text
                 style={styles.textNormal}>
-                {t('sign_in.username')}
+                Tên tài khoản
               </Text>
               <View
                 style={{
-                  position: 'relative',
-                  alignItems: 'center',
-                  marginBottom: 8,
+                  position: "relative",
+                  alignItems: "center",
+                  marginBottom: 8
                 }}>
                 <TextInput
                   value={accountRegister.username}
                   onChangeText={(username: string) =>
-                    onSetAccountRegister('username', username)
+                    onSetAccountRegister("username", username)
                   }
-                  placeholder="username"
-                  placeholderTextColor={'grey'}
+                  placeholder="Tên tài khoản"
+                  placeholderTextColor={"grey"}
                   style={styles.input}
                 />
               </View>
@@ -62,25 +62,27 @@ export default function ForgotPassword({navigation}: any) {
 
             <Text
               style={styles.textNormal}>
-              email
+              Email
             </Text>
             <View
               style={{
-                position: 'relative',
-                alignItems: 'center',
-                marginBottom: 8,
+                position: "relative",
+                alignItems: "center",
+                marginBottom: 8
               }}>
               <TextInput
                 value={accountRegister.email}
                 onChangeText={(email: string) =>
-                  onSetAccountRegister('email', email)
+                  onSetAccountRegister("email", email)
                 }
                 placeholder="email"
-                placeholderTextColor={'grey'}
+                placeholderTextColor={"grey"}
                 style={styles.input}
               />
             </View>
           </View>
+          {forgotPassword && <Text style={styles.errorText}>Đổi mật khẩu thành công</Text>}
+
           <TouchableOpacity
             style={styles.buttonRegister}
             onPress={() => {
@@ -89,14 +91,28 @@ export default function ForgotPassword({navigation}: any) {
             <Text
               style={{
                 fontSize: 15,
-                color: 'white',
+                color: "white",
                 marginTop: 9,
-                fontFamily: 'Poppins-SemiBold',
+                fontFamily: "Poppins-SemiBold"
               }}>
-              Send
+              Gửi mật khẩu về email
             </Text>
           </TouchableOpacity>
-          
+          <TouchableOpacity
+            style={{ ...styles.buttonRegister, marginTop: 10 }}
+            onPress={() => {
+              navigation.goBack();
+            }}>
+            <Text
+              style={{
+                fontSize: 15,
+                color: "white",
+                marginTop: 9,
+                fontFamily: "Poppins-SemiBold"
+              }}>
+              Quay Lại
+            </Text>
+          </TouchableOpacity>
         </View>
       </KeyboardAvoidingView>
     </View>
@@ -108,46 +124,56 @@ const styles = StyleSheet.create({
     fontSize: 16,
     paddingHorizontal: 16,
     height: 50,
-    backgroundColor: 'white',
-    width: Dimensions.get('window').width * 0.9,
+    backgroundColor: "white",
+    width: Dimensions.get("window").width * 0.9,
     borderRadius: 20,
     borderWidth: 1,
-    borderColor: 'rgba(20, 57, 128, 1)',
-    color: 'black',
+    borderColor: "rgba(20, 57, 128, 1)",
+    color: "black"
   },
   mLogo: {
-    alignSelf: 'center',
+    alignSelf: "center",
     height: 100,
     width: 200,
-    marginTop: 50,
+    marginTop: 50
   },
   textLogo: {
-    textAlign: 'center',
-    color: 'black',
-    fontFamily: 'Poppins-Italic',
+    textAlign: "center",
+    color: "black",
+    fontFamily: "Poppins-Italic"
   },
-  textSigin: {
+  textSignIn: {
     fontSize: 30,
     marginTop: 50,
-    marginLeft: Dimensions.get('window').width * 0.05,
-    color: 'rgba(20, 57, 128, 1)',
-    fontFamily: 'Poppins-SemiBold',
+    marginLeft: Dimensions.get("window").width * 0.05,
+    color: "rgba(20, 57, 128, 1)",
+    fontFamily: "Poppins-SemiBold"
   },
   textNormal: {
     marginTop: 15,
     fontSize: 18,
-    marginLeft: Dimensions.get('window').width * 0.05,
-    color: 'rgba(20, 57, 128, 1)',
-    fontFamily: 'Poppins-SemiBold',
+    marginLeft: Dimensions.get("window").width * 0.05,
+    color: "rgba(20, 57, 128, 1)",
+    fontFamily: "Poppins-SemiBold"
   },
-  buttonRegister:{
-    marginTop: 10,
-    width: Dimensions.get('window').width * 0.5,
+  buttonRegister: {
+    marginTop: 20,
+    width: Dimensions.get("window").width * 0.5,
     height: 50,
     borderWidth: 1,
-    backgroundColor: 'rgba(20, 57, 128, 1)',
-    alignSelf: 'center',
+    backgroundColor: "rgba(20, 57, 128, 1)",
+    alignSelf: "center",
     borderRadius: 20,
-    alignItems: 'center',
+    alignItems: "center"
+  },
+  errorText: {
+    color: "red",
+    marginTop: 10,
+    textAlign: "center"
+  },
+  successText: {
+    color: "red",
+    marginTop: 10,
+    textAlign: "center"
   }
 });

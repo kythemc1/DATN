@@ -1,9 +1,8 @@
 import React, { useState, useCallback, useEffect } from "react";
 import { GiftedChat, InputToolbar } from "react-native-gifted-chat";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { StyleSheet } from "react-native";
+import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { API, API_KEY_CHAT_BOT } from "Configs/Constants/API";
-import HeaderChat from "Components/Commons/HeaderChat";
 
 const logo = require("../../Assets/Images/2.jpg");
 const API_URL = API.API_CHAT_BOT;
@@ -63,7 +62,7 @@ export default function AskDetails({ navigation }: any) {
           max_tokens: 256,
           top_p: 1,
           frequency_penalty: 0,
-          presence_penalty: 0,
+          presence_penalty: 0
         })
       });
       if (!response.ok) {
@@ -122,19 +121,46 @@ export default function AskDetails({ navigation }: any) {
 
   return (
     <SafeAreaView style={{ flex: 1 }}>
-      <HeaderChat navigation={navigation} screenBack={"TabNavigation"} />
+      <View style={{
+        backgroundColor: "#2a4d69",
+        paddingBottom: 20,
+        flexDirection: "row",
+        position: "relative"
+      }}>
+        <Text style={{
+          fontSize: 20,
+          marginLeft: 20,
+          color: "white",
+          fontWeight: "bold",
+          textAlign: "center",
+          flex: 1,
+          marginTop: 10
+        }}>
+          Hỏi và đáp
+        </Text>
+        <TouchableOpacity
+          style={{ position: "absolute", marginLeft: 5, marginTop: 10 }}
+          onPress={() => {
+            navigation.goBack();
+          }}>
+          <Image
+            style={{ height: 20, width: 20 }}
+            source={require("../../Assets/Images/left-chevron.png")}
+          />
+        </TouchableOpacity>
+      </View>
       <GiftedChat
-        messages={messages}
-        showAvatarForEveryMessage={true}
-        onSend={(messages: any) => onSend(messages)}
-        renderInputToolbar={props => customtInputToolbar(props)}
-        user={{
-          _id: 1,
-          avatar: logo
-        }}
-        keyboardShouldPersistTaps="never"
-        textInputProps={styles.textInput}
-      />
+      messages={messages}
+      showAvatarForEveryMessage={true}
+      onSend={(messages: any) => onSend(messages)}
+      renderInputToolbar={props => customtInputToolbar(props)}
+      user={{
+        _id: 1,
+        avatar: logo
+      }}
+      keyboardShouldPersistTaps="never"
+      textInputProps={styles.textInput}
+    />
     </SafeAreaView>
   );
 }

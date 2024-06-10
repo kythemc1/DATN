@@ -2,8 +2,12 @@ import React from 'react';
 import {Image, View, Text, TouchableOpacity, ScrollView, StyleSheet, Dimensions} from 'react-native';
 import {Colors} from 'react-native-ui-lib';
 import {SafeAreaView} from "react-native-safe-area-context";
+import { useUser } from "Hooks/API/User";
+import { useAuth } from "Hooks/API/Auth";
 
 export default function More({navigation}: any) {
+  const { onLogout } = useAuth();
+
   const renderRowItem = (iconLeft: any, title: string, onPress: () => void) => {
     return (
       <TouchableOpacity
@@ -49,7 +53,7 @@ export default function More({navigation}: any) {
                   </Text>
                   {renderRowItem(
                       require('../../Assets/Images/change_password.png'),
-                      'Thông tin người dùng',
+                      'Đổi mật khẩu người dùng',
                       () => {
                           navigation.navigate('UserProfileView');
                       },
@@ -73,11 +77,18 @@ export default function More({navigation}: any) {
                   {/*)}*/}
                   {renderRowItem(
                       require('../../Assets/Images/policy.png'),
-                      'Dictionary',
+                      'Từ điển',
                       () => {
                           navigation.navigate('Dic');
                       },
                   )}
+                {renderRowItem(
+                  require('../../Assets/Images/undo.png'),
+                  'Đăng xuất',
+                  () => {
+                    onLogout()
+                  },
+                )}
               </ScrollView>
 
       </SafeAreaView>

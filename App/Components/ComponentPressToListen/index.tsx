@@ -14,6 +14,7 @@ interface props {
     level : string;
     pressToScreen: string;
     id : number;
+    script : string
 }
 export default function ComponentPressToListen(props: props) {
     return (
@@ -30,15 +31,16 @@ export default function ComponentPressToListen(props: props) {
                   <Text>{props.level}</Text>
               </View>
           </View>
-          <TouchableOpacity style={{ justifyContent: "center", marginLeft: 130 }} onPress={() => {
+          <TouchableOpacity style={{ justifyContent: "center", marginRight:10 }} onPress={() => {
               props.navigation.navigate(props.pressToScreen, {
                   level: props.level,
                   name: props.name,
-                  // cate: props.cate,
-                  // page: props.page
+                  id: props.id,
+                  script : props.script,
+                  url: props.url
               });
           }}>
-              <Image style={{ height: 30, width: 30, marginLeft: 15 }}
+              <Image style={{ height: 30, width: 30,marginRight:10 }}
                      source={require("../../Assets/Images/play-button.png")}></Image>
               <Text>Bắt đầu</Text>
           </TouchableOpacity>
@@ -52,7 +54,7 @@ const styles = StyleSheet.create({
         width: Dimensions.get("window").width * 0.9,
         alignSelf: "center",
         borderRadius: 20,
-        // marginBottom: 20,
+        justifyContent: 'space-between',
         marginTop: 10,
         flexDirection: "row",
         backgroundColor: "white",

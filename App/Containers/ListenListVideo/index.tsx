@@ -5,7 +5,6 @@ import {
     StyleSheet, Text, TouchableOpacity, View
 } from "react-native";
 import {SafeAreaView} from 'react-native-safe-area-context';
-import HeaderChat from "Components/Commons/HeaderChat";
 import {useRoute} from "@react-navigation/native";
 import {API} from "Configs/Constants/API";
 import axios from "axios";
@@ -41,7 +40,6 @@ export default function ListenListVideo({navigation}: { navigation: any }) {
                   setLists(response.data.listResult);
                   calculateTotalPages(response.data.totalRecord)
               }
-
           })
           .catch(error => {
               console.error('Error fetching data: ', error);
@@ -57,7 +55,7 @@ export default function ListenListVideo({navigation}: { navigation: any }) {
         setCurrentPage(page)
         setRecordPerPage(10)}
 
-    const handleChangePage=async (page: number, itemsPerPage: number)=>{
+    const handleChangePage=async (page: number)=>{
         setInfoPage(page)
         await getList()
     }
@@ -79,10 +77,10 @@ export default function ListenListVideo({navigation}: { navigation: any }) {
                     flex: 1,
                     marginTop: 10
                 }}>
-                    Cài đặt người dùng
+                    Nghe hiểu
                 </Text>
                 <TouchableOpacity
-                  style={{ position: "absolute", marginLeft: 5, marginTop: 10 }}
+                  style={{ position: "absolute", marginLeft: 5, marginTop: 15 }}
                   onPress={() => {
                       navigation.goBack();
                   }}>
@@ -94,8 +92,8 @@ export default function ListenListVideo({navigation}: { navigation: any }) {
             </View>
             <ScrollView>
                 {
-                    lists.map(({listenId, url}, index)=>(
-                      <ComponentPressToListen key={index} name={'Listen'} navigation={navigation} id={listenId} level={level} url={url} pressToScreen={'ListenDetails'}/>
+                    lists.map(({listenId, url,script,nameVideo}, index)=>(
+                      <ComponentPressToListen key={index} name={nameVideo} navigation={navigation} id={listenId} level={level} url={url} pressToScreen={'ListenDetails'} script={script}/>
                     ))
                 }
             </ScrollView>

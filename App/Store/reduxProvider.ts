@@ -10,7 +10,7 @@ import {
   PURGE,
   REGISTER,
 } from 'redux-persist';
-import {generatePersistConfig} from '../Utils/Redux';
+import {generatePersistConfig} from "Utils/Redux";
 import authSlice from './Reducers/authSlice';
 import langSlice from './Reducers/langSlice';
 

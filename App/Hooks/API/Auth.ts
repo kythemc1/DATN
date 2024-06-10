@@ -1,13 +1,10 @@
-import {API} from '../../Configs/Constants/API';
-import {useState} from 'react';
-import {useDispatch} from 'react-redux';
-import {logout, setAuth, setUser} from '../../Store/Reducers/authSlice';
-import {useDebouncedCallback} from 'use-debounce';
-import Navigator from '../../Utils/Navigator';
-import axios from 'axios';
-
-
-
+import { API } from "Configs/Constants/API";
+import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { logout, setAuth, setNoti, setUser } from "Store/Reducers/authSlice";
+import { useDebouncedCallback } from "use-debounce";
+import Navigator from "../../Utils/Navigator";
+import axios from "axios";
 
 export const useAuth = () => {
   const dispatch = useDispatch();
@@ -15,47 +12,42 @@ export const useAuth = () => {
     username: string;
     password: string;
   }>({
-    username: '',
-    password: '',
+    username: "",
+    password: ""
   });
 
-  const onSetAccount = (field: 'username' | 'password', value: string) => {
+  const onSetAccount = (field: "username" | "password", value: string) => {
     setAccount({
       ...account,
-      [field]: value,
+      [field]: value
     });
   };
 
   const onLogout = () => {
     dispatch(logout());
-    Navigator.reset('SignIn');
-    console.log('log outtttttttt');
-    
+    Navigator.reset("SignIn");
   };
 
-  const login=useDebouncedCallback(
+  const login = useDebouncedCallback(
     async ({ username, password }: { username: string; password: string }) => {
-      console.log('vao ham login');
-      
-      // if(username==='Admin' && password ==='A')
-      try{
+
+      try {
         const data = await axios({
-          url : API.API_AUTH_LOGIN,
+          url: API.API_AUTH_LOGIN,
           data: {
             username,
             password
           },
-          method: 'post'
-        })
-        if (data){
-          console.log('dataaaa  ',data);
+          method: "post"
+        });
+        if (data.data.userName) {
           dispatch(setAuth({
             isLogged: true,
             token: data.data.accessToken,
             refreshToken: data.data.refreshToken,
             refreshTokenExpiredDate: null,
             type: data.data.type
-          }))
+          }));
           dispatch(setUser({
             id: null,
             address: data.data.address,
@@ -67,17 +59,33 @@ export const useAuth = () => {
             lastName: data.data.lastname,
             status: null,
             username: data.data.userName
-          }))
-          Navigator.reset('TabNavigation');
+          }));
+          Navigator.reset("TabNavigation");
 
         }
-      }
-      catch(erorr){
-        console.log('loi dang nhap  ',erorr);
-        
+        else {
+          dispatch(setNoti({
+            forgotPass: false,
+            changePass: false,
+            registerNoti: false,
+            loginFalse: true,
+            registerFalse: false,
+            changePassFalse: false
+          }));
+        }
+      } catch (erorr) {
+        dispatch(setNoti({
+          forgotPass: false,
+          changePass: false,
+          registerNoti: false,
+          loginFalse: true,
+          registerFalse: false,
+          changePassFalse: false
+        }));
+
       }
     }
-  )
+  );
   return {
     account,
     onSetAccount,

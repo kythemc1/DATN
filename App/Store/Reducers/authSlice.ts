@@ -24,8 +24,19 @@ interface IUserState {
 const initialState = {
   auth: {} as IAuthState,
   user: {} as IUserState | null,
+  noti : {} as INotification | null
   // api_key : {} as API_KEY | null,
 };
+
+interface INotification  {
+  loginFalse : boolean | false,
+  changePass : boolean | false,
+  registerNoti : boolean | false,
+  registerFalse : boolean | false,
+  changePassFalse : boolean | false,
+  forgotPass : boolean | false,
+
+}
 
 export const authSlice = createSlice({
   name: 'auth',
@@ -47,9 +58,13 @@ export const authSlice = createSlice({
       };
       state.user = null;
     },
+
+    setNoti : (state,action:PayloadAction<INotification>)=>{
+      state.noti = action.payload
+    }
   },
 });
 
-export const {setAuth, setUser, logout } = authSlice.actions;
+export const {setAuth, setUser, logout,setNoti } = authSlice.actions;
 
 export default authSlice.reducer;

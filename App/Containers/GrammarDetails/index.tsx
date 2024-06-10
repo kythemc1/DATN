@@ -115,8 +115,7 @@ export default function GrammarDetails({ navigation }: any) {
       .then(response => {
         if (response.data != null) {
           setLists(response.data);
-          console.log(response.data);
-          console.log(`${api}${name}`, "`${api}${name}`");
+
         }
       })
       .catch(error => {
