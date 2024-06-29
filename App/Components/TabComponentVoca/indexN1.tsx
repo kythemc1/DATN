@@ -18,8 +18,6 @@ export const TabComponentVocabularyN1 = ({ navigation }: any) => {
     axios.get(`${API.API_GET_COUNT_VOCABULARY_BY_LEVEL}N1`)
       .then(response => {
         if (response.data != null) {
-          console.log(response.data, "N1");
-
           const arr = [];
           for (let i = 1; i <= calculateTotalPages(response.data); ++i) {
             arr.push({ name: i, page: i });

@@ -38,12 +38,12 @@ export default function Register({ navigation }: any) {
           <View>
             <Text
               style={styles.textSigin}>
-              Register
+              Đăng ký
             </Text>
             <View>
               <Text
                 style={styles.textNormal}>
-                {t("sign_in.username")}
+                Tên tài khoản
               </Text>
               <View
                 style={{
@@ -56,7 +56,7 @@ export default function Register({ navigation }: any) {
                   onChangeText={(username: string) =>
                     onSetAccountRegister("username", username)
                   }
-                  placeholder="username"
+                  placeholder="tên tài khoản"
                   placeholderTextColor={"grey"}
                   style={styles.input}
                 />
@@ -66,7 +66,7 @@ export default function Register({ navigation }: any) {
 
             <Text
               style={styles.textNormal}>
-              email
+              Email
             </Text>
             <View
               style={{

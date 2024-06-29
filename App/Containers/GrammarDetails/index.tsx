@@ -5,7 +5,6 @@ import {
   Dimensions,
   FlatList, Image,
   StyleSheet, Text, TouchableOpacity, View
-
 } from "react-native";
 import { useRoute } from "@react-navigation/native";
 import { Colors } from "react-native-ui-lib";
@@ -89,7 +88,7 @@ export default function GrammarDetails({ navigation }: any) {
       const shuffledOptions = Array.from(options).sort(() => Math.random() - 0.5);
 
       questions.push({
-        question: `Nghĩa của từ '${word}' là gì?`,
+        question: `Nghĩa của '${word}' là gì?`,
         options: shuffledOptions,
         answer: means
       });
@@ -97,7 +96,6 @@ export default function GrammarDetails({ navigation }: any) {
 
     }
     setIsQuizStarted(true);
-    console.log("question", questions);
   };
   const questions: { question: string; options: string[]; answer: string }[] = [];
 

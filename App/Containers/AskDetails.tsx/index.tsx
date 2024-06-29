@@ -51,7 +51,12 @@ export default function AskDetails({ navigation }: any) {
           messages: [
             {
               role: "system",
-              content: "You are a helpful assistant proficient in teaching Japanese. Your task is to assist the user in learning Japanese language effectively."
+              content: "You are a helpful" +
+                " assistant proficient" +
+                " in teaching Japanese. " +
+                "Your task is to assist the" +
+                " user in learning Japanese " +
+                "language effectively."
             },
             {
               role: "user",

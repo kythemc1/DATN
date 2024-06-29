@@ -32,7 +32,7 @@ export default function Ask({navigation}: any) {
               - Bro có thể nhập câu hỏi từ Chat
             </Text>
             <Text style={styles.textIntro}>- Tôi sẽ cho bro đáp án</Text>
-            <Text style={styles.textIntro}>-Hãy tin tôi</Text>
+            <Text style={styles.textIntro}>-Hãy hỏi tôi</Text>
           </View>
           <TouchableOpacity
             onPress={() => {
@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
   textIntro: {
     fontFamily: 'Poppins-Medium',
     textAlign: 'center',
-    color: Colors.text,
+    color:'black',
   },
   viewIntro: {
     height: Dimensions.get('window').height * 0.35,

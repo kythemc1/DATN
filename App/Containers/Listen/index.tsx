@@ -116,7 +116,7 @@ const styles = StyleSheet.create({
     width: 300
   },
   viewCourse: {
-    width: Dimensions.get("window").width * 0.8,
+    width: Dimensions.get("window").width * 0.9,
     flexDirection: "row",
     justifyContent: "space-between",
     alignSelf: "center",

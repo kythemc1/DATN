@@ -35,7 +35,7 @@ export const useUser = () => {
             email,
             "firstName": "",
             "lastname": "",
-            "password": "1234",
+            "password": "123456",
             "age": "",
             "address": "",
             "phoneNumber": "",
@@ -43,6 +43,7 @@ export const useUser = () => {
           },
           method: "post"
         });
+        console.log(data,'data');
         if (data) {
           dispatch(setNoti({
             changePass: false,
@@ -62,12 +63,14 @@ export const useUser = () => {
           registerFalse: true
         }));
       } catch (erorr) {
+        console.log(erorr,'data');
+
         dispatch(setNoti({
           forgotPass: false,
           changePass: false,
-          registerNoti: true,
+          registerNoti: false,
           loginFalse: false,
-          registerFalse: false,
+          registerFalse: true,
           changePassFalse: false
         }));
       }

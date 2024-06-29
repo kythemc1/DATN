@@ -27,7 +27,7 @@ export default function More({navigation}: any) {
             source={iconLeft}
             style={{width: 40, height: 40, marginRight: 10}}
           />
-          <Text style={{fontSize: 18, color : Colors.text}}>{title ? title : ''}</Text>
+          <Text style={{fontSize: 18, color : 'black'}}>{title ? title : ''}</Text>
         </View>
         <Image
           source={require('../../Assets/Images/arrow-right.png')}
@@ -46,7 +46,7 @@ export default function More({navigation}: any) {
                           paddingHorizontal: 10,
                           paddingVertical: 20,
                           fontWeight: 'bold',
-                          color: Colors.text,
+                          color: 'black',
                           fontSize: 18,
                       }}>
                       Cài đặt
@@ -63,7 +63,7 @@ export default function More({navigation}: any) {
                           paddingHorizontal: 10,
                           paddingVertical: 20,
                           fontWeight: 'bold',
-                          color: Colors.text,
+                          color: 'black',
                           fontSize: 18,
                       }}>
                       Khác

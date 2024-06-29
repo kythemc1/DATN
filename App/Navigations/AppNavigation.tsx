@@ -34,7 +34,7 @@ export default function AppNavigation() {
   // const isLogged = useSelector((state: RootState) => state.auth.auth.isLogged);
 
   const getInitialRouteName = () => {
-    return 'TabNavigation';
+    return 'Splash';
   };
 
   const onRef = (ref: any) => {
@@ -43,7 +43,6 @@ export default function AppNavigation() {
 
   useEffect(() => {
     onRef(navigationRef);
-    console.log(navigationRef.current.getState());
   }, [navigationRef]);
   return (
     <SafeAreaView style={{flex:1}}>

@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
   },
   textHello: {
     fontFamily: 'Poppins-Medium',
-    color: Colors.text,
+    color: 'black',
     fontSize: 20,
   },
   avatar: {
@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
   },
   textWelcome: {
     fontFamily: 'Poppins-Regular',
-    color: Colors.text,
+    color: 'black',
     fontSize: 10,
   },
   viewHead: {
