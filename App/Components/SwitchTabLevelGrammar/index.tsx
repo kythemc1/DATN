@@ -22,7 +22,6 @@ const SwitchTabLevelGrammar = () => {
                     tabBarInactiveTintColor: "#000000",
                 }
                 }
-
             >
                 <Tab.Screen name={"N1"} component={TabComponentGrammarN1}
                 />

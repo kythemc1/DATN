@@ -44,7 +44,10 @@ export default function(props: props) {
               }
             ]}
                               onPress={() => {
-                                handlePress(item, props.state.answer);
+                                if(!isChoose){
+                                  setIsChoose(true)
+                                  handlePress(item, props.state.answer);
+                                }
                               }}
             >
               <Text style={[

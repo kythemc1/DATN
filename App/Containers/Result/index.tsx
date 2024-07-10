@@ -47,7 +47,7 @@ export default function Result({ navigation }: any) {
         <TouchableOpacity
           style={{ position: "absolute", marginLeft: 5, marginTop: 2 }}
           onPress={() => {
-            navigation.goBack();
+            navigation.navigate('TabNavigation');
           }}>
           <Image
             style={{ height: 20, width: 20 }}

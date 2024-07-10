@@ -27,7 +27,6 @@ export default function ListenDetails({ navigation }: any) {
 
   const [scripts,setScripts] = useState<value[]>([])
   useEffect(() => {
-    console.log(script);
     setScripts(convertScriptArray(script))
   }, []);
 
@@ -39,7 +38,6 @@ export default function ListenDetails({ navigation }: any) {
     }
   }, []);
   const togglePlaying = useCallback(() => {
-    console.log(scripts);
     setPlaying(prev => !prev);
   }, []);
   const playerRef = useRef<YoutubeIframeRef>(null);
@@ -91,7 +89,7 @@ export default function ListenDetails({ navigation }: any) {
         </TouchableOpacity>
       </View>
       <View style={{padding : 10}}>
-        <Text style={{textAlign:'center',color : '#2a4d69',fontSize: 14}}>Bài: {name}</Text>
+        <Text style={{textAlign:'center',color : '#2a4d69',fontSize: 14}}>{name}</Text>
 
       </View>
       <YouTubePlayer

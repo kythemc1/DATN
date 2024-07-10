@@ -14,10 +14,9 @@ export const TabComponentGrammarN4=({navigation} : any)=>{
   }, []);
 
   const getList = async () => {
-    axios.get(`${API.API_GET_COUNT_VOCABULARY_BY_LEVEL}N4`)
+    axios.get(`${API.API_GET_COUNT_GRAMMAR_BY_LEVEL}N4`)
       .then(response => {
         if (response.data != null) {
-          console.log(response.data,"N4");
           const arr = [];
           for (let i = 1; i <= calculateTotalPages(response.data); ++i) {
             arr.push({name : i,page:i});

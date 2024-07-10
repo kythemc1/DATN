@@ -1,7 +1,9 @@
 import i18n from 'i18next';
 import {useTranslation, initReactI18next} from 'react-i18next';
-import {store} from '../Store/reduxProvider';
+import {store} from 'Store/reduxProvider';
+// @ts-ignore
 import en from './Translations/en.json';
+// @ts-ignore
 import vi from './Translations/vi.json';
 
 const resources = {

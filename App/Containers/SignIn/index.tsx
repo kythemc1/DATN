@@ -20,6 +20,8 @@ export default function SignIn({ navigation }: any) {
 
   const { onSetAccount, account, login } = useAuth();
   const [typeTouchId, setTypeTouchID] = useState("");
+
+
   useEffect(() => {
     if(username){
       BioSupported();
@@ -96,6 +98,24 @@ export default function SignIn({ navigation }: any) {
       Alert.alert("Không Hỗ Trợ");
     }
   };
+
+  const [valUser,setValUSer] = useState(false)
+  function validateUsername(username: string) {
+        if(username.length >= 6){
+            setValUSer(false);
+            onSetAccount("username", username)
+        }
+        else setValUSer(true)
+    }
+    const [valPass,setValPass] = useState(false)
+
+  const validatePassword = (password: string)=> {
+        if(password.length >= 6){
+            setValPass(false);
+            onSetAccount("password", password)
+        }
+        else setValPass(true)
+    }
   return (
     <View
       onTouchMove={Keyboard.dismiss}
@@ -152,7 +172,7 @@ export default function SignIn({ navigation }: any) {
                 <TextInput
                   value={account.username}
                   onChangeText={(username: string) =>
-                    onSetAccount("username", username)
+                      onSetAccount("username", username)
                   }
                   placeholder='Tên tài khoản'
                   placeholderTextColor={"grey"}

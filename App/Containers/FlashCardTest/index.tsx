@@ -77,7 +77,6 @@ export default function FlashCardTest({ navigation }: any) {
       <FlatList
         data={data}
         renderItem={({ item }) => <ListQuiz onAnswer={handleAnswer} setScore={setScore} state={item} />}
-        keyExtractor={(item, index) => item.key}
         horizontal
         snapToInterval={Dimensions.get("window").width}
         snapToAlignment="center"

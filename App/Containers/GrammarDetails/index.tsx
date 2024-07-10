@@ -11,6 +11,7 @@ import { Colors } from "react-native-ui-lib";
 import RenderListTuVung from "Components/RenderListTuVung";
 import { API } from "Configs/Constants/API";
 import axios from "axios";
+import RenderListGrammar from "Components/RenderListGrammar";
 
 export default function GrammarDetails({ navigation }: any) {
   const route = useRoute();
@@ -30,7 +31,7 @@ export default function GrammarDetails({ navigation }: any) {
   if (cate == "Grammar") {
     switch (level) {
       case "N1":
-        api = API.API_GET_VOCABULARY_N1;
+        api = API.API_GET_GRAMMAR_N1;
         break;
       case "N2":
         api = API.API_GET_GRAMMAR_N2;
@@ -155,37 +156,53 @@ export default function GrammarDetails({ navigation }: any) {
           <Text style={styles.textTittle}>Level {level} Bài {page} </Text>
         </View>
         <View>
-          <FlatList
-            data={lists}
-            renderItem={({ item }) => <RenderListTuVung state={item} />}
-            keyExtractor={item => item}
-            horizontal
-            snapToInterval={Dimensions.get("window").width}
-            snapToAlignment="center"
-            decelerationRate="fast"
-            // showsHorizontalScrollIndicator={false}
-          />
+          {
+              cate != 'Grammar' &&  <FlatList
+                  data={lists}
+                  renderItem={({ item,index }) => <RenderListTuVung state={item} key={index} />}
+                  horizontal
+                  snapToInterval={Dimensions.get("window").width}
+                  snapToAlignment="center"
+                  decelerationRate="fast"
+                  // showsHorizontalScrollIndicator={false}
+              />
+          }
+          {
+              cate == 'Grammar' &&  <FlatList
+                  data={lists}
+                  renderItem={({ item,index }) => <RenderListGrammar state={item} key={index} />}
+                  horizontal
+                  snapToInterval={Dimensions.get("window").width}
+                  snapToAlignment="center"
+                  decelerationRate="fast"
+                  style={{marginTop: 50}}
+                  // showsHorizontalScrollIndicator={false}
+              />
+          }
         </View>
       </View>
-      <TouchableOpacity style={{
-        height: 40,
-        width: 120,
-        backgroundColor: "#2a4d69",
-        borderRadius: 10,
-        justifyContent: "center",
-        alignSelf: "center"
-      }}
-                        onPress={() => {
-                          createQuiz(lists, 10);
-                          navigation.navigate("FlashCardTest", {
-                            data: questions,
-                            cate: cate,
-                            level: level,
-                            page: page
-                          });
-                        }}>
-        <Text style={{ color: "white", textAlign: "center" }}>Luyện tập</Text>
-      </TouchableOpacity>
+      {
+        cate != 'Grammar' &&  <TouchableOpacity style={{
+            height: 40,
+            width: 120,
+            backgroundColor: "#2a4d69",
+            borderRadius: 10,
+            justifyContent: "center",
+            alignSelf: "center"
+          }}
+                                                 onPress={() => {
+                                                   createQuiz(lists, 10);
+                                                   navigation.navigate("FlashCardTest", {
+                                                     data: questions,
+                                                     cate: cate,
+                                                     level: level,
+                                                     page: page
+                                                   });
+                                                 }}>
+            <Text style={{ color: "white", textAlign: "center" }}>Luyện tập</Text>
+          </TouchableOpacity>
+      }
+
     </SafeAreaView>
   );
 }

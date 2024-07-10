@@ -13,7 +13,7 @@ export const TabComponentGrammarN2=({navigation} : any)=>{
   }, []);
 
   const getList = async () => {
-    axios.get(`${API.API_GET_COUNT_VOCABULARY_BY_LEVEL}N2`)
+    axios.get(`${API.API_GET_COUNT_GRAMMAR_BY_LEVEL}N2`)
       .then(response => {
         if (response.data != null) {
           console.log(response.data,"N2");

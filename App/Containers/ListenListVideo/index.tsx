@@ -36,9 +36,13 @@ export default function ListenListVideo({navigation}: { navigation: any }) {
         axios.get( `${api}${currentPage}`)
           .then(response => {
               if(response.data!=null){
-                  console.log(response.data.listResult)
                   setLists(response.data.listResult);
-                  calculateTotalPages(response.data.totalRecord)
+                  if(response.data.totalRecord){
+                      calculateTotalPages(response.data.totalRecord)
+
+                  }else{
+                      calculateTotalPages(10)
+                  }
               }
           })
           .catch(error => {
